@@ -1,0 +1,50 @@
+{
+  "id": "sta-2010",
+  "type": "statute",
+  "title": "Akta Perdagangan Strategik 2010",
+  "title_en": "Strategic Trade Act 2010",
+  "short_name": "STA 2010",
+  "status": "in_force",
+  "issued_date": "2010-06-10",
+  "in_force_date": "2011-07-01",
+  "url": "https://www.commonlii.org/my/legis/consol_act/sta2010199/",
+  "description": "Controls export, transhipment, transit, and brokering of strategic items, including technology and software relevant to weapons of mass destruction and military end-use.",
+  "provisions": [
+    {
+      "provision_ref": "s2",
+      "section": "2",
+      "title": "Interpretation",
+      "content": "In this Act, unless the context otherwise requires — \"strategic item\" means any item as set out in the Strategic Trade (Strategic Items) Order; \"unlisted item\" means any item not included in the Strategic Trade (Strategic Items) Order that can be used in whole or in part for or in connection with the development, production, handling, operation, maintenance, storage, detection, identification or dissemination of weapons of mass destruction or their means of delivery, including missiles capable of delivering such weapons, or any item that can be used in whole or in part for military end-use."
+    },
+    {
+      "provision_ref": "s8",
+      "section": "8",
+      "title": "Prohibition on export of strategic items without permit",
+      "content": "No person shall export or attempt to export any strategic item from Malaysia without a valid permit issued by the Strategic Trade Controller. A person who contravenes this section commits an offence and shall on conviction be liable to a fine not exceeding ten million ringgit or to imprisonment for a term not exceeding five years or to both."
+    },
+    {
+      "provision_ref": "s13",
+      "section": "13",
+      "title": "Catch-all provision",
+      "content": "No person shall export, tranship, transit or broker any unlisted item if the person knows or has reason to believe that the unlisted item is or may be intended, in its entirety or in part, for use in connection with any activity relating to weapons of mass destruction."
+    },
+    {
+      "provision_ref": "s18",
+      "section": "18",
+      "title": "End-user certificate",
+      "content": "The Strategic Trade Controller may require any applicant for a permit under this Act to produce an end-user certificate from the government of the country of final destination, or such other document as may be required. The end-user certificate shall contain — (a) a description of the strategic item; (b) the quantity of the strategic item; (c) the identity of the end-user; and (d) a statement of the specific end-use of the strategic item."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "strategic item",
+      "definition": "\"strategic item\" means any item as set out in the Strategic Trade (Strategic Items) Order",
+      "source_provision": "s2"
+    },
+    {
+      "term": "unlisted item",
+      "definition": "\"unlisted item\" means any item not included in the Strategic Trade (Strategic Items) Order that can be used in whole or in part for or in connection with the development, production, handling, operation, maintenance, storage, detection, identification or dissemination of weapons of mass destruction",
+      "source_provision": "s2"
+    }
+  ]
+}

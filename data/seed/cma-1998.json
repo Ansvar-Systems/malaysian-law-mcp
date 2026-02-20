@@ -1,0 +1,73 @@
+{
+  "id": "cma-1998",
+  "type": "statute",
+  "title": "Akta Komunikasi dan Multimedia 1998",
+  "title_en": "Communications and Multimedia Act 1998",
+  "short_name": "CMA 1998",
+  "status": "in_force",
+  "issued_date": "1998-11-01",
+  "in_force_date": "1999-04-01",
+  "url": "https://www.commonlii.org/my/legis/consol_act/cama1998330/",
+  "description": "Comprehensive regulation of communications and multimedia industries in Malaysia. Establishes MCMC and governs licensing, content regulation, and technical standards.",
+  "provisions": [
+    {
+      "provision_ref": "s3",
+      "section": "3",
+      "title": "National policy objectives",
+      "content": "The national policy objectives for the communications and multimedia industry are — (a) to establish Malaysia as a major global centre and hub for communications and multimedia information and content services; (b) to promote a civil society where information-based services will provide the basis of continuing enhancements to quality of work and life; (c) to grow and nurture local information resources and cultural representation that facilitate the national identity and global diversity; (d) to regulate for the long-term benefit of the end user; (e) to promote a high level of consumer confidence in the communications and multimedia industry; (f) to ensure an equitable provision of affordable services over ubiquitous national infrastructure; (g) to create a robust applications environment for end users; (h) to facilitate the efficient allocation of resources such as skilled labour, capital, knowledge and national assets; (i) to promote the development of capabilities and skills within Malaysia's convergence industries; and (j) to ensure information security and network reliability and integrity."
+    },
+    {
+      "provision_ref": "s126",
+      "section": "126",
+      "title": "Content applications service provider",
+      "content": "No content applications service provider, or other person using a content applications service, shall provide content which is indecent, obscene, false, menacing, or offensive in character with intent to annoy, abuse, threaten or harass any person."
+    },
+    {
+      "provision_ref": "s211",
+      "section": "211",
+      "title": "Prohibition on provision of offensive content",
+      "content": "No content applications service provider, or other person using a content applications service, shall provide content which is indecent, obscene, false, menacing, or offensive in character with intent to annoy, abuse, threaten or harass any person. A person who contravenes subsection (1) commits an offence and shall, on conviction, be liable to a fine not exceeding fifty thousand ringgit or to imprisonment for a term not exceeding one year or to both and shall also be liable to a further fine of one thousand ringgit for every day or part of a day during which the offence is continued after conviction."
+    },
+    {
+      "provision_ref": "s233",
+      "section": "233",
+      "title": "Improper use of network facilities or network service",
+      "content": "A person who — (a) by means of any network facilities or network service or applications service knowingly — (i) makes, creates or solicits; and (ii) initiates the transmission of, any comment, request, suggestion or other communication which is obscene, indecent, false, menacing or offensive in character with intent to annoy, abuse, threaten or harass another person; or (b) initiates a communication using any applications service, whether continuously, repeatedly or otherwise, during which communication may or may not ensue, with or without disclosing his identity and with intent to annoy, abuse, threaten or harass any person at any number, commits an offence. A person who contravenes this section commits an offence and shall, on conviction, be liable to a fine not exceeding fifty thousand ringgit or to imprisonment for a term not exceeding one year or to both."
+    },
+    {
+      "provision_ref": "s234",
+      "section": "234",
+      "title": "Interception and disclosure of communications",
+      "content": "A person who, including the use of any network facilities, network service or applications service, intentionally intercepts, attempts to intercept, or procures any other person to intercept or attempt to intercept, any communication, commits an offence and shall, on conviction, be liable to a fine not exceeding one hundred thousand ringgit or to imprisonment for a term not exceeding two years or to both."
+    },
+    {
+      "provision_ref": "s235",
+      "section": "235",
+      "title": "Fraud in relation to communications",
+      "content": "Any person who with dishonest intention uses any network facilities, network service or applications service to defraud another person commits an offence and shall, on conviction, be liable to a fine not exceeding three hundred thousand ringgit or to imprisonment for a term not exceeding five years or to both."
+    },
+    {
+      "provision_ref": "s252",
+      "section": "252",
+      "title": "Powers of the Commission",
+      "content": "The Malaysian Communications and Multimedia Commission shall have the powers — (a) to enquire into, and take action on, complaints from any licensee or any consumer of communications and multimedia services; (b) to conduct investigations where it has reason to believe that a provision of this Act has been breached."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "network facilities",
+      "definition": "\"network facilities\" means any element or combination of elements of physical infrastructure used principally for, or in connection with, the provision of network services, but does not include customer equipment",
+      "source_provision": "s6"
+    },
+    {
+      "term": "content applications service",
+      "definition": "\"content applications service\" means a service provided by an applications service provider that provides content",
+      "source_provision": "s6"
+    },
+    {
+      "term": "applications service",
+      "definition": "\"applications service\" means a service provided by means of, but not solely by means of, one or more network services",
+      "source_provision": "s6"
+    }
+  ]
+}

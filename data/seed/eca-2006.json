@@ -1,0 +1,56 @@
+{
+  "id": "eca-2006",
+  "type": "statute",
+  "title": "Akta Perdagangan Elektronik 2006",
+  "title_en": "Electronic Commerce Act 2006",
+  "short_name": "ECA 2006",
+  "status": "in_force",
+  "issued_date": "2006-01-01",
+  "in_force_date": "2006-10-19",
+  "url": "https://www.commonlii.org/my/legis/consol_act/eca2006203/",
+  "description": "Provides legal recognition for electronic messages in commercial transactions. Covers formation of contracts, attribution, acknowledgment, and dispatch/receipt of electronic messages.",
+  "provisions": [
+    {
+      "provision_ref": "s5",
+      "section": "5",
+      "title": "Legal recognition of electronic message",
+      "content": "An electronic message shall not be denied legal effect, validity or enforceability on the ground that it is wholly or partly in an electronic form."
+    },
+    {
+      "provision_ref": "s6",
+      "section": "6",
+      "title": "Formation and validity of contracts",
+      "content": "In the formation of a contract, the communication of proposals, acceptance of proposals, and revocation of proposals and acceptances or any related communication may be expressed by an electronic message. A contract shall not be denied legal effect, validity or enforceability on the ground that an electronic message is used in its formation."
+    },
+    {
+      "provision_ref": "s7",
+      "section": "7",
+      "title": "Recognition by parties of electronic message",
+      "content": "Nothing in this Act shall require a person to use, provide or accept an electronic message in any commercial transaction unless the person consents to using, providing or accepting the electronic message."
+    },
+    {
+      "provision_ref": "s8",
+      "section": "8",
+      "title": "Fulfilment of requirement for writing",
+      "content": "Where any law requires information to be in writing, the requirement of the law is fulfilled if the information is contained in an electronic message that is accessible and intelligible so as to be usable for subsequent reference."
+    },
+    {
+      "provision_ref": "s9",
+      "section": "9",
+      "title": "Fulfilment of signature requirement",
+      "content": "Where any law requires a signature of a person on a document, the requirement of the law is fulfilled, if the document is in the form of an electronic message, by an electronic signature which — (a) is attached to or is logically associated with the electronic message; (b) adequately identifies the person and adequately indicates the person's approval of the information to which the signature relates; and (c) is as reliable as is appropriate given the purpose for which, and the circumstances in which, the signature is required."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "electronic message",
+      "definition": "\"electronic message\" means information generated, sent, received or stored by electronic means for use in a commercial transaction",
+      "source_provision": "s4"
+    },
+    {
+      "term": "electronic signature",
+      "definition": "\"electronic signature\" means any letter, character, number, sound or any other symbol or any combination thereof created in an electronic form adopted by a person as a signature",
+      "source_provision": "s4"
+    }
+  ]
+}

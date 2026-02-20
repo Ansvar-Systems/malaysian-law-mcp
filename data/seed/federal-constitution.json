@@ -1,0 +1,57 @@
+{
+  "id": "federal-constitution",
+  "type": "statute",
+  "title": "Perlembagaan Persekutuan",
+  "title_en": "Federal Constitution",
+  "short_name": "Federal Constitution",
+  "status": "in_force",
+  "issued_date": "1957-08-31",
+  "in_force_date": "1957-08-31",
+  "url": "https://www.commonlii.org/my/legis/consol_act/fc/",
+  "description": "Supreme law of Malaysia. Establishes fundamental liberties (Part II), federal-state relations, citizenship, and the structure of government. Article 5 (liberty), Article 10 (expression), Article 13 (property) are key for digital rights.",
+  "provisions": [
+    {
+      "provision_ref": "art4",
+      "chapter": "PART I - THE STATES, RELIGION AND LAW OF THE FEDERATION",
+      "section": "4",
+      "title": "Supreme law of the Federation",
+      "content": "This Constitution is the supreme law of the Federation and any law passed after Merdeka Day which is inconsistent with this Constitution shall, to the extent of the inconsistency, be void."
+    },
+    {
+      "provision_ref": "art5",
+      "chapter": "PART II - FUNDAMENTAL LIBERTIES",
+      "section": "5",
+      "title": "Liberty of the person",
+      "content": "(1) No person shall be deprived of his life or personal liberty save in accordance with law. (2) Where complaint is made to a High Court or any judge thereof that a person is being unlawfully detained, the court shall inquire into the complaint and, unless satisfied that the detention is lawful, shall order him to be produced before the court and release him. (3) Where a person is arrested he shall be informed as soon as may be of the grounds of his arrest and shall be allowed to consult and be defended by a legal practitioner of his choice. (4) Where a person is arrested and not released, he shall without unreasonable delay, and in any case within twenty-four hours (excluding the time of any necessary journey) be produced before a magistrate and shall not be further detained in custody without the magistrate's authority."
+    },
+    {
+      "provision_ref": "art8",
+      "chapter": "PART II - FUNDAMENTAL LIBERTIES",
+      "section": "8",
+      "title": "Equality",
+      "content": "(1) All persons are equal before the law and entitled to the equal protection of the law. (2) Except as expressly authorized by this Constitution, there shall be no discrimination against citizens on the ground only of religion, race, descent, place of birth or gender in any law or in the appointment to any office or employment under a public authority or in the administration of any law relating to the acquisition, holding or disposition of property or the establishing or carrying on of any trade, business, profession, vocation or employment."
+    },
+    {
+      "provision_ref": "art10",
+      "chapter": "PART II - FUNDAMENTAL LIBERTIES",
+      "section": "10",
+      "title": "Freedom of speech, assembly and association",
+      "content": "(1) Subject to Clauses (2), (3) and (4) — (a) every citizen has the right to freedom of speech and expression; (b) all citizens have the right to assemble peaceably and without arms; (c) all citizens have the right to form associations. (2) Parliament may by law impose — (a) on the rights conferred by paragraph (a) of Clause (1), such restrictions as it deems necessary or expedient in the interest of the security of the Federation or any part thereof, friendly relations with other countries, public order, morality and restrictions designed to protect the privileges of Parliament or of any Legislative Assembly or to provide against contempt of court, defamation, or incitement to any offence."
+    },
+    {
+      "provision_ref": "art13",
+      "chapter": "PART II - FUNDAMENTAL LIBERTIES",
+      "section": "13",
+      "title": "Rights to property",
+      "content": "(1) No person shall be deprived of property save in accordance with law. (2) No law shall provide for the compulsory acquisition or use of property without adequate compensation."
+    },
+    {
+      "provision_ref": "art149",
+      "chapter": "PART XI - SPECIAL POWERS AGAINST SUBVERSION, ORGANISED VIOLENCE, AND ACTS AND CRIMES PREJUDICIAL TO THE PUBLIC",
+      "section": "149",
+      "title": "Legislation against subversion, action prejudicial to public order, etc.",
+      "content": "If an Act of Parliament recites that action has been taken or threatened by any substantial body of persons, whether inside or outside the Federation — (a) to cause, or to cause a substantial number of citizens to fear, organized violence against persons or property; or (b) to excite disaffection against the Yang di-Pertuan Agong or any Government in the Federation; or (c) to promote feelings of ill-will and hostility between different races or other classes of the population likely to cause violence; or (d) to procure the alteration, otherwise than by lawful means, of anything by law established; or (e) which is prejudicial to the maintenance or the functioning of any supply or service to the public or any class of the public in the Federation or any part thereof; or (f) which is prejudicial to public order in, or the security of, the Federation or any part thereof, any provision of that law designed to stop or prevent that action is valid notwithstanding that it is inconsistent with any of the provisions of Article 5, 9, 10 or 13."
+    }
+  ],
+  "definitions": []
+}

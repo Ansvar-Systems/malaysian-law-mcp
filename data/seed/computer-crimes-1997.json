@@ -1,0 +1,74 @@
+{
+  "id": "computer-crimes-1997",
+  "type": "statute",
+  "title": "Akta Jenayah Komputer 1997",
+  "title_en": "Computer Crimes Act 1997",
+  "short_name": "CCA 1997",
+  "status": "in_force",
+  "issued_date": "1997-06-01",
+  "in_force_date": "2000-06-01",
+  "url": "https://www.commonlii.org/my/legis/consol_act/cca1997210/",
+  "description": "Criminalises unauthorised access to computer material, unauthorised modification of computer contents, wrongful communication, and abetment/attempts. Key cybercrime statute.",
+  "provisions": [
+    {
+      "provision_ref": "s3",
+      "section": "3",
+      "title": "Unauthorised access to computer material",
+      "content": "A person shall be guilty of an offence if — (a) he causes a computer to perform any function with intent to secure access to any program or data held in any computer; (b) the access he intends to secure is unauthorised; and (c) he knows at the time when he causes the computer to perform the function that that is the case. The intent a person has to have to commit an offence under this section need not be directed at — (i) any particular program or data; (ii) a program or data of a particular kind; or (iii) a program or data held in any particular computer. A person guilty of an offence under this section shall on conviction be liable to a fine not exceeding fifty thousand ringgit or to imprisonment for a term not exceeding five years or to both."
+    },
+    {
+      "provision_ref": "s4",
+      "section": "4",
+      "title": "Unauthorised access with intent to commit or facilitate commission of further offence",
+      "content": "A person shall be guilty of an offence under this section if he commits an offence referred to in section 3 with intent — (a) to commit an offence involving fraud or dishonesty or which causes injury as defined in the Penal Code; or (b) to facilitate the commission of such offence whether by himself or by any other person. A person guilty of an offence under this section shall on conviction be liable to a fine not exceeding one hundred and fifty thousand ringgit or to imprisonment for a term not exceeding ten years or to both."
+    },
+    {
+      "provision_ref": "s5",
+      "section": "5",
+      "title": "Unauthorised modification of the contents of any computer",
+      "content": "A person shall be guilty of an offence if he does any act which he knows will cause unauthorised modification of the contents of any computer. For the purposes of this section, it is immaterial that the act in question is not directed at — (a) any particular program or data; (b) a program or data of any particular kind; or (c) a program or data held in any particular computer. For the purposes of this section, it is immaterial whether an unauthorised modification or any intended effect of it is, or is intended to be, permanent or merely temporary. A person guilty of an offence under this section shall on conviction be liable to a fine not exceeding one hundred thousand ringgit or to imprisonment for a term not exceeding seven years or to both."
+    },
+    {
+      "provision_ref": "s6",
+      "section": "6",
+      "title": "Wrongful communication",
+      "content": "A person shall be guilty of an offence if he communicates directly or indirectly a number, code, password or other means of access to a computer to any person other than a person to whom he is duly authorised to communicate. A person guilty of an offence under this section shall on conviction be liable to a fine not exceeding twenty-five thousand ringgit or to imprisonment for a term not exceeding three years or to both."
+    },
+    {
+      "provision_ref": "s7",
+      "section": "7",
+      "title": "Abetments and attempts punishable as offences",
+      "content": "A person who abets the commission of or who attempts to commit any offence under this Act shall be guilty of that offence and shall on conviction be liable to the punishment provided for that offence."
+    },
+    {
+      "provision_ref": "s8",
+      "section": "8",
+      "title": "Presumption",
+      "content": "Where any person has in his custody or control any program, data or other information which is held in any computer or retrieved from any computer which he is not authorised to have in his custody or control, he shall be deemed to have obtained unauthorised access to such program, data or information unless the contrary is proved."
+    },
+    {
+      "provision_ref": "s9",
+      "section": "9",
+      "title": "Territorial scope of the Act",
+      "content": "The provisions of this Act shall, in relation to any person, whatever his nationality or citizenship, have effect outside as well as within Malaysia, and where an offence under this Act is committed by any person in any place outside Malaysia, he may be dealt with in respect of such offence as if it was committed at any place within Malaysia. For the purposes of this section, this Act shall apply if, for the offence in question, the computer, program or data was in Malaysia or capable of being connected to or sent to or used by or with a computer in Malaysia at the material time."
+    },
+    {
+      "provision_ref": "s10",
+      "section": "10",
+      "title": "Powers of investigation and search",
+      "content": "In any case relating to the commission of an offence under this Act, a police officer not below the rank of Inspector or any person authorised in that behalf by the Public Prosecutor shall have the power to — (a) search for, seize and detain any computer, program, data or other information or material; (b) have access to, inspect and check the operation of any computer suspected of being used in connection with any offence under this Act; (c) require any person to produce any computer, program, data or other information for the purpose of any investigation; and (d) require any person to provide an explanation of any program, data or other information."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "computer",
+      "definition": "\"computer\" means an electronic, magnetic, optical, electrochemical, or other data processing device, or a group of such interconnected or related devices, performing logical, arithmetic, storage and display functions, and includes any data storage facility or communications facility directly related to or operating in conjunction with such device or group of such interconnected or related devices",
+      "source_provision": "s2"
+    },
+    {
+      "term": "unauthorised access",
+      "definition": "Access of any kind by any person to any computer is unauthorised if he is not himself entitled to control access of the kind in question to the program or data and he does not have consent to access by him of the kind in question to the program or data from any person who is so entitled",
+      "source_provision": "s2"
+    }
+  ]
+}

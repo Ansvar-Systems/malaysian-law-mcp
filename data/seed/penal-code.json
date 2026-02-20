@@ -1,0 +1,80 @@
+{
+  "id": "penal-code",
+  "type": "statute",
+  "title": "Kanun Keseksaan",
+  "title_en": "Penal Code",
+  "short_name": "Penal Code",
+  "status": "in_force",
+  "issued_date": "1936-01-01",
+  "in_force_date": "1936-01-01",
+  "url": "https://www.commonlii.org/my/legis/consol_act/pc182/",
+  "description": "Comprehensive criminal code. Includes provisions on cheating, criminal breach of trust, mischief including computer damage, forgery including electronic documents, and criminal intimidation.",
+  "provisions": [
+    {
+      "provision_ref": "s378",
+      "chapter": "CHAPTER XVII - OF OFFENCES AGAINST PROPERTY",
+      "section": "378",
+      "title": "Theft",
+      "content": "Whoever, intending to take dishonestly any movable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft. A person is said to cause a thing to move by removing an obstacle which prevented it from moving, or by separating it from any other thing, as well as by actually moving it."
+    },
+    {
+      "provision_ref": "s405",
+      "chapter": "CHAPTER XVII - OF OFFENCES AGAINST PROPERTY",
+      "section": "405",
+      "title": "Criminal breach of trust",
+      "content": "Whoever, being in any manner entrusted with property, or with any dominion over property, dishonestly misappropriates, or converts to his own use, that property, or dishonestly uses or disposes of that property in violation of any direction of law prescribing the mode in which such trust is to be discharged, or of any legal contract, express or implied, which he has made touching the discharge of such trust, or wilfully suffers any other person so to do, commits criminal breach of trust."
+    },
+    {
+      "provision_ref": "s415",
+      "chapter": "CHAPTER XVII - OF OFFENCES AGAINST PROPERTY",
+      "section": "415",
+      "title": "Cheating",
+      "content": "Whoever, by deceiving any person, whether or not such deception was the sole or main inducement, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation, or property, is said to cheat."
+    },
+    {
+      "provision_ref": "s420",
+      "chapter": "CHAPTER XVII - OF OFFENCES AGAINST PROPERTY",
+      "section": "420",
+      "title": "Cheating and dishonestly inducing delivery of property",
+      "content": "Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter, or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment for a term which shall not be less than one year and not more than ten years, and with whipping, and shall also be liable to fine."
+    },
+    {
+      "provision_ref": "s425",
+      "chapter": "CHAPTER XVII - OF OFFENCES AGAINST PROPERTY",
+      "section": "425",
+      "title": "Mischief",
+      "content": "Whoever, with intent to cause, or knowing that he is likely to cause, wrongful loss or damage to the public or to any person, causes the destruction of any property, or any such change in any property, or in the situation thereof, as destroys or diminishes its value or utility, or affects it injuriously, commits mischief."
+    },
+    {
+      "provision_ref": "s463",
+      "chapter": "CHAPTER XVIII - OF OFFENCES RELATING TO DOCUMENTS AND TO CURRENCY NOTES AND BANK NOTES",
+      "section": "463",
+      "title": "Forgery",
+      "content": "Whoever makes any false document or false electronic record or part of a document or electronic record, with intent to cause damage or injury to the public or to any person, or to support any claim or title, or to cause any person to part with property, or to enter into any express or implied contract, or with intent to commit fraud or that fraud may be committed, commits forgery."
+    },
+    {
+      "provision_ref": "s477A",
+      "chapter": "CHAPTER XVIII - OF OFFENCES RELATING TO DOCUMENTS AND TO CURRENCY NOTES AND BANK NOTES",
+      "section": "477A",
+      "title": "Falsification of accounts",
+      "content": "Whoever, being a clerk, officer or servant, or employed or acting in the capacity of a clerk, officer or servant, wilfully and with intent to defraud, destroys, alters, mutilates or falsifies any book, electronic record, paper, writing, valuable security or account which belongs to or is in the possession of his employer, or has been received by him for or on behalf of his employer, or wilfully and with intent to defraud makes or abets the making of any false entry in, or omits or alters or abets the omission or alteration of any material particular from or in any such book, electronic record, paper, writing, valuable security or account, shall be punished with imprisonment for a term which may extend to seven years, or with fine, or with both."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "dishonestly",
+      "definition": "\"dishonestly\" - Whoever does anything with the intention of causing wrongful gain to one person, or wrongful loss to another person, is said to do that thing dishonestly",
+      "source_provision": "s24"
+    },
+    {
+      "term": "fraudulently",
+      "definition": "\"fraudulently\" - A person is said to do a thing fraudulently if he does that thing with intent to defraud, but not otherwise",
+      "source_provision": "s25"
+    },
+    {
+      "term": "document",
+      "definition": "\"document\" denotes any matter expressed or described upon any substance by means of letters, figures, or marks, or by more than one of those means, intended to be used, or which may be used, for the purpose of recording that matter, and includes electronic records",
+      "source_provision": "s29"
+    }
+  ]
+}

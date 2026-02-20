@@ -1,0 +1,56 @@
+{
+  "id": "cpa-1999",
+  "type": "statute",
+  "title": "Akta Pelindungan Pengguna 1999",
+  "title_en": "Consumer Protection Act 1999",
+  "short_name": "CPA 1999",
+  "status": "in_force",
+  "issued_date": "1999-11-15",
+  "in_force_date": "1999-11-15",
+  "url": "https://www.commonlii.org/my/legis/consol_act/cpa1999304/",
+  "description": "Protects consumers against unfair practices, misleading conduct, unsafe goods and services. Part IIIA covers e-commerce consumer protection including online marketplace obligations.",
+  "provisions": [
+    {
+      "provision_ref": "s3",
+      "section": "3",
+      "title": "Application",
+      "content": "This Act shall apply in respect of all goods and services that are offered or supplied to one or more consumers in trade including any trade transaction conducted through electronic means. For the avoidance of doubt, this Act shall not apply to — (a) securities as defined in the Securities Industry Act 1983; or (b) futures contracts as defined in the Futures Industry Act 1993; or (c) any contract of insurance including a contract of takaful; or (d) land or any interest in land; or (e) services provided by a registered person as defined in the Legal Profession Act 1976; or (f) healthcare services provided by a healthcare professional or healthcare facility."
+    },
+    {
+      "provision_ref": "s8",
+      "section": "8",
+      "title": "False or misleading representation",
+      "content": "No person shall, in trade, engage in conduct that is misleading or deceptive or is likely to mislead or deceive any person. Without limiting the generality of subsection (1), the conduct referred to in subsection (1) includes any representation, whether expressed or implied, that — (a) goods are of a particular kind, standard, quality, grade, quantity, composition, style or model; (b) goods have had a particular history or particular previous use; (c) services are of a particular kind, standard, quality or quantity; (d) services are supplied by any particular person or by any person of a particular trade, qualification or skill."
+    },
+    {
+      "provision_ref": "s46A",
+      "section": "46A",
+      "title": "E-commerce transactions",
+      "content": "This Part applies to any trade transaction conducted through electronic means, including but not limited to a transaction conducted through an online marketplace. For the purposes of this Part — \"online marketplace\" means an electronic platform that allows consumers to enter into trade transactions with suppliers."
+    },
+    {
+      "provision_ref": "s46B",
+      "section": "46B",
+      "title": "Duties of operator of online marketplace",
+      "content": "An operator of an online marketplace shall — (a) provide accurate and clear information about the goods or services listed on the online marketplace; (b) ensure that the identity and contact details of the supplier are made available to the consumer; (c) ensure that the online marketplace platform has an accessible and effective mechanism for the consumer to lodge complaints; (d) take reasonable steps to ensure the security of the consumer's personal and financial information."
+    },
+    {
+      "provision_ref": "s46C",
+      "section": "46C",
+      "title": "Right of withdrawal for e-commerce",
+      "content": "A consumer who enters into a trade transaction through electronic means shall have the right to withdraw from the transaction within a period to be prescribed by the Minister. The right of withdrawal shall not apply to — (a) goods that have been consumed or used; (b) digital content that has been downloaded or streamed; (c) goods that are made to the consumer's specifications."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "consumer",
+      "definition": "\"consumer\" means a person who acquires or uses goods or services of a kind ordinarily acquired for personal, domestic or household purpose, use or consumption",
+      "source_provision": "s3"
+    },
+    {
+      "term": "online marketplace",
+      "definition": "\"online marketplace\" means an electronic platform that allows consumers to enter into trade transactions with suppliers",
+      "source_provision": "s46A"
+    }
+  ]
+}

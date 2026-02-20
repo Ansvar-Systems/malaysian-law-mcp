@@ -1,0 +1,112 @@
+{
+  "id": "pdpa-2010",
+  "type": "statute",
+  "title": "Akta Perlindungan Data Peribadi 2010",
+  "title_en": "Personal Data Protection Act 2010",
+  "short_name": "PDPA 2010",
+  "status": "in_force",
+  "issued_date": "2010-06-10",
+  "in_force_date": "2013-11-15",
+  "url": "https://www.commonlii.org/my/legis/consol_act/pdpa2010360/",
+  "description": "Regulates the processing of personal data in commercial transactions. Establishes 7 data protection principles, rights of data subjects, and the role of the Personal Data Protection Commissioner.",
+  "provisions": [
+    {
+      "provision_ref": "s4",
+      "section": "4",
+      "title": "Interpretation",
+      "content": "In this Act, unless the context otherwise requires — \"data processor\" means any person, other than an employee of the data user, who processes the personal data solely on behalf of the data user, and does not process the personal data for any of his own purposes; \"data subject\" means an individual who is the subject of the personal data; \"data user\" means a person who either alone or jointly or in common with other persons processes any personal data or has control over or authorizes the processing of any personal data, but does not include a data processor; \"personal data\" means any information in respect of commercial transactions, which — (a) is being processed wholly or partly by means of equipment operating automatically in response to instructions given for that purpose; (b) is recorded with the intention that it should wholly or partly be processed by means of such equipment; or (c) is recorded as part of a relevant filing system or with the intention that it should form part of a relevant filing system; \"processing\", in relation to personal data, means collecting, recording, holding or storing the personal data or carrying out any operation or set of operations on the personal data; \"sensitive personal data\" means any personal data consisting of information as to the physical or mental health or condition of a data subject, his political opinions, his religious beliefs or other beliefs of a similar nature, the commission or alleged commission by him of any offence or any other personal data as the Minister may determine by order published in the Gazette."
+    },
+    {
+      "provision_ref": "s5",
+      "section": "5",
+      "title": "Application",
+      "content": "This Act shall apply to — (a) any person who processes; and (b) any person who has control over or authorizes the processing of, any personal data in respect of commercial transactions. This Act does not apply to the Federal Government of Malaysia or any State Government."
+    },
+    {
+      "provision_ref": "s6",
+      "section": "6",
+      "title": "The General Principle",
+      "content": "A data user shall not — (a) process personal data about a data subject unless the data subject has given his consent to the processing of the personal data; or (b) process personal data about a data subject for a purpose other than — (i) the purpose for which the personal data was to be or is being collected; or (ii) a purpose directly related to the purpose referred to in subparagraph (i). The processing of personal data shall be in compliance with the provisions of this Act."
+    },
+    {
+      "provision_ref": "s7",
+      "section": "7",
+      "title": "The Notice and Choice Principle",
+      "content": "A data user shall, by written notice, inform a data subject — (a) that personal data of the data subject is being processed by or on behalf of the data user, and shall provide a description of the personal data; (b) the purposes for which the personal data is being or is to be collected and further processed; (c) of any information available to the data user as to the source of the personal data; (d) of the data subject's right to request access to and to request correction of the personal data and how to contact the data user with any inquiries or complaints in respect of the personal data; (e) of the class of third parties to whom the data user discloses or may disclose the personal data; (f) of the choices and means the data user offers the data subject for limiting the processing of personal data; and (g) whether it is obligatory or voluntary for the data subject to supply the personal data and the consequences for the data subject if the data subject fails to supply the personal data."
+    },
+    {
+      "provision_ref": "s8",
+      "section": "8",
+      "title": "The Disclosure Principle",
+      "content": "No personal data shall, without the consent of the data subject, be disclosed — (a) for any purpose other than — (i) the purpose for which the personal data was to be disclosed at the time of collection of the personal data; or (ii) a purpose directly related to the purpose referred to in subparagraph (i); or (b) to any party other than a third party of the class of third parties specified in the written notice given under section 7."
+    },
+    {
+      "provision_ref": "s9",
+      "section": "9",
+      "title": "The Security Principle",
+      "content": "A data user shall, when processing personal data, take practical steps to protect the personal data from any loss, misuse, modification, unauthorized or accidental access or disclosure, alteration or destruction by having regard to — (a) the nature of the personal data and the harm that would result from such loss, misuse, modification, unauthorized or accidental access or disclosure, alteration or destruction; (b) the place or location where the personal data is stored; (c) any security measures incorporated into any equipment in which the personal data is stored; (d) the measures taken for ensuring the reliability, integrity and competence of personnel having access to the personal data; and (e) the measures taken for ensuring the secure transfer of the personal data."
+    },
+    {
+      "provision_ref": "s10",
+      "section": "10",
+      "title": "The Retention Principle",
+      "content": "The personal data processed for any purpose shall not be kept longer than is necessary for the fulfilment of that purpose. A data user shall take all reasonable steps to ensure that all personal data is destroyed or permanently deleted if it is no longer required for the purpose for which it was to be processed."
+    },
+    {
+      "provision_ref": "s11",
+      "section": "11",
+      "title": "The Data Integrity Principle",
+      "content": "A data user shall take reasonable steps to ensure that the personal data is accurate, complete, not misleading and kept up-to-date by having regard to the purpose, including any directly related purpose, for which the personal data was collected and further processed."
+    },
+    {
+      "provision_ref": "s12",
+      "section": "12",
+      "title": "The Access Principle",
+      "content": "A data subject shall be given access to his personal data held by a data user and be able to correct that personal data where the personal data is inaccurate, incomplete, misleading or not up-to-date, except where compliance with a request to such access or correction is refused under this Act."
+    },
+    {
+      "provision_ref": "s129",
+      "section": "129",
+      "title": "Transfer of personal data to places outside Malaysia",
+      "content": "A data user shall not transfer any personal data of a data subject to a place outside Malaysia unless to such place as specified by the Minister, upon the recommendation of the Commissioner, by notification published in the Gazette. The Minister may specify the place under subsection (1) where — (a) there are adequate laws or regulations relating to personal data protection in the place to which personal data is being transferred; (b) there exist adequate measures to ensure compliance with any condition relating to the personal data protection."
+    },
+    {
+      "provision_ref": "s130",
+      "section": "130",
+      "title": "Offences relating to personal data",
+      "content": "A person who contravenes section 5(1) commits an offence and shall, on conviction, be liable — (a) to a fine not exceeding three hundred thousand ringgit; or (b) to imprisonment for a term not exceeding two years; or (c) to both."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "personal data",
+      "definition": "\"personal data\" means any information in respect of commercial transactions, which is being processed wholly or partly by means of equipment operating automatically in response to instructions given for that purpose, or is recorded with the intention that it should wholly or partly be processed by means of such equipment, or is recorded as part of a relevant filing system",
+      "source_provision": "s4"
+    },
+    {
+      "term": "data user",
+      "definition": "\"data user\" means a person who either alone or jointly or in common with other persons processes any personal data or has control over or authorizes the processing of any personal data, but does not include a data processor",
+      "source_provision": "s4"
+    },
+    {
+      "term": "data processor",
+      "definition": "\"data processor\" means any person, other than an employee of the data user, who processes the personal data solely on behalf of the data user, and does not process the personal data for any of his own purposes",
+      "source_provision": "s4"
+    },
+    {
+      "term": "sensitive personal data",
+      "definition": "\"sensitive personal data\" means any personal data consisting of information as to the physical or mental health or condition of a data subject, his political opinions, his religious beliefs or other beliefs of a similar nature, the commission or alleged commission by him of any offence or any other personal data as the Minister may determine",
+      "source_provision": "s4"
+    },
+    {
+      "term": "processing",
+      "definition": "\"processing\" in relation to personal data, means collecting, recording, holding or storing the personal data or carrying out any operation or set of operations on the personal data",
+      "source_provision": "s4"
+    },
+    {
+      "term": "data subject",
+      "definition": "\"data subject\" means an individual who is the subject of the personal data",
+      "source_provision": "s4"
+    }
+  ]
+}

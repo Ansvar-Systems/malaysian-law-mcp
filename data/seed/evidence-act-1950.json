@@ -1,0 +1,56 @@
+{
+  "id": "evidence-act-1950",
+  "type": "statute",
+  "title": "Akta Keterangan 1950",
+  "title_en": "Evidence Act 1950",
+  "short_name": "EA 1950",
+  "status": "in_force",
+  "issued_date": "1950-01-01",
+  "in_force_date": "1950-01-01",
+  "url": "https://www.commonlii.org/my/legis/consol_act/ea195080/",
+  "description": "Governs admissibility of evidence in court. Section 90A-90C cover admissibility of electronic documents and computer-generated evidence. Critical for cybercrime prosecution and digital forensics.",
+  "provisions": [
+    {
+      "provision_ref": "s3",
+      "section": "3",
+      "title": "Interpretation",
+      "content": "In this Act, unless the context otherwise requires — \"document\" means any matter expressed, described, or howsoever represented, upon any substance, material, thing or article, including any matter embodied in a disc, tape, film, microfilm or in any form of mechanical or electronic device whatsoever; \"evidence\" includes — (a) all statements which the court permits or requires to be made before it by witnesses, in relation to matters of fact under inquiry: such statements are called oral evidence; (b) all documents including electronic records produced for the inspection of the court: such documents are called documentary evidence."
+    },
+    {
+      "provision_ref": "s90A",
+      "section": "90A",
+      "title": "Admissibility of document produced by computers",
+      "content": "(1) In any criminal or civil proceeding, a document produced by a computer, or a statement contained in such document, shall be admissible as evidence of any fact stated therein if the document was produced by the computer in the course of its ordinary use, whether or not the person tendering it is the maker of such document or statement. (2) For the purposes of this section it shall be sufficient to show that the computer was operating properly. (3) For the purposes of this section, a certificate — (a) identifying the document containing the statement and describing the manner in which it was produced; (b) giving such particulars of any device involved in the production of that document as may be appropriate for the purpose of showing that the document was produced by a computer; (c) dealing with any of the matters to which the conditions mentioned in subsection (2) relate; and purporting to be signed by a person occupying a responsible position in relation to the operation of the relevant device or the management of the relevant activities, shall be evidence of anything stated therein."
+    },
+    {
+      "provision_ref": "s90B",
+      "section": "90B",
+      "title": "Weight to be attached to document",
+      "content": "In estimating the weight, if any, to be attached to a document or a statement admissible in evidence by virtue of section 90A, regard shall be had to all the circumstances from which any inference can reasonably be drawn as to the accuracy or otherwise of the document or statement, and in particular — (a) whether or not the information which the document or statement being tendered in evidence reproduces or is derived from was supplied to the relevant computer, or recorded for the purpose of being supplied thereto, contemporaneously with the occurrence or existence of the facts dealt with in that information; and (b) whether or not the supplier of the relevant information, or any person concerned with the operation of the relevant computer at any material time, had any incentive to conceal or misrepresent the facts."
+    },
+    {
+      "provision_ref": "s90C",
+      "section": "90C",
+      "title": "Proof as to conditions of admissibility",
+      "content": "For the purposes of deciding whether or not a statement is admissible in evidence by virtue of section 90A, the court may draw any reasonable inference from the circumstances in which the statement was made or otherwise came into being or from any other circumstances, including the form and contents of the document in which the statement is contained. In estimating the weight, if any, to be attached to a statement admissible in evidence by virtue of section 90A, regard shall be had to all the circumstances from which any inference can reasonably be drawn as to the accuracy or otherwise of the statement."
+    },
+    {
+      "provision_ref": "s62",
+      "section": "62",
+      "title": "Primary evidence",
+      "content": "Primary evidence means the document itself produced for the inspection of the court. Where a document has been executed in several parts, each part shall be primary evidence of the document. Where a document has been executed in counterpart, each counterpart being executed by one or some of the parties only, each counterpart shall be primary evidence as against the parties executing it. Where a number of documents have all been made by one uniform process, as in the case of printing, lithography, or photography, each shall be primary evidence of the contents of the rest; but where they are all copies of a common original they shall not be primary evidence of the contents of the original."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "document",
+      "definition": "\"document\" means any matter expressed, described, or howsoever represented, upon any substance, material, thing or article, including any matter embodied in a disc, tape, film, microfilm or in any form of mechanical or electronic device whatsoever",
+      "source_provision": "s3"
+    },
+    {
+      "term": "evidence",
+      "definition": "\"evidence\" includes all statements which the court permits or requires to be made before it by witnesses, in relation to matters of fact under inquiry (oral evidence), and all documents including electronic records produced for the inspection of the court (documentary evidence)",
+      "source_provision": "s3"
+    }
+  ]
+}

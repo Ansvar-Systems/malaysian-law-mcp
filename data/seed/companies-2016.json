@@ -1,0 +1,62 @@
+{
+  "id": "companies-2016",
+  "type": "statute",
+  "title": "Akta Syarikat 2016",
+  "title_en": "Companies Act 2016",
+  "short_name": "CA 2016",
+  "status": "in_force",
+  "issued_date": "2016-09-15",
+  "in_force_date": "2017-01-31",
+  "url": "https://www.commonlii.org/my/legis/consol_act/ca2016139/",
+  "description": "Governs company incorporation, management, and dissolution in Malaysia. Includes provisions on corporate governance, directors duties, financial reporting, and compliance requirements.",
+  "provisions": [
+    {
+      "provision_ref": "s2",
+      "section": "2",
+      "title": "Interpretation",
+      "content": "In this Act, unless the context otherwise requires — \"company\" means a company incorporated under this Act or under any corresponding previous written law; \"director\" includes any person occupying the position of director of a corporation by whatever name called and includes a person in accordance with whose directions or instructions the directors of a corporation are accustomed to act and an alternate or substitute director; \"officer\" means any director, secretary or employee of the corporation; \"related corporation\" in relation to a corporation, means a corporation that is the corporation's holding company, subsidiary, or a subsidiary of the corporation's holding company."
+    },
+    {
+      "provision_ref": "s213",
+      "section": "213",
+      "title": "Duty to act in good faith",
+      "content": "A director of a company shall at all times exercise his powers for a proper purpose and in good faith in the best interest of the company."
+    },
+    {
+      "provision_ref": "s214",
+      "section": "214",
+      "title": "Duty to exercise reasonable care, skill and diligence",
+      "content": "A director of a company shall exercise reasonable care, skill and diligence with — (a) the knowledge, skill and experience which may reasonably be expected of a director having the same responsibilities; and (b) any additional knowledge, skill and experience which the director in fact has."
+    },
+    {
+      "provision_ref": "s218",
+      "section": "218",
+      "title": "Duty to disclose interest in contract",
+      "content": "Every director of a company who is in any way, whether directly or indirectly, interested in a contract or proposed contract with the company shall as soon as practicable after the relevant facts have come to his knowledge, declare the nature of his interest at a meeting of the directors of the company. A director who fails to comply with this section commits an offence and shall, on conviction, be liable to imprisonment for a term not exceeding five years or to a fine not exceeding three million ringgit or to both."
+    },
+    {
+      "provision_ref": "s245",
+      "section": "245",
+      "title": "Financial statements and reports",
+      "content": "The directors of a company shall cause to be prepared financial statements of the company for each financial year. The financial statements required to be prepared shall include — (a) a statement of financial position as at the end of the financial year; (b) a statement of comprehensive income for the financial year; (c) a statement of changes in equity for the financial year; (d) a statement of cash flows for the financial year; and (e) notes to the financial statements."
+    },
+    {
+      "provision_ref": "s539",
+      "section": "539",
+      "title": "Records in electronic form",
+      "content": "Where any provision of this Act requires the keeping of any record, register or minute, the record, register or minute may be kept in electronic form so long as it is kept in accordance with the requirements of the Electronic Commerce Act 2006."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "company",
+      "definition": "\"company\" means a company incorporated under this Act or under any corresponding previous written law",
+      "source_provision": "s2"
+    },
+    {
+      "term": "director",
+      "definition": "\"director\" includes any person occupying the position of director of a corporation by whatever name called and includes a person in accordance with whose directions or instructions the directors of a corporation are accustomed to act and an alternate or substitute director",
+      "source_provision": "s2"
+    }
+  ]
+}
