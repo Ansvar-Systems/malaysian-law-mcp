@@ -1,0 +1,183 @@
+{
+  "$schema": "./golden-tests.schema.json",
+  "version": "1.0",
+  "mcp_name": "Malaysian Law MCP",
+  "description": "Golden contract tests for the Malaysian Law MCP covering PDPA 2010, Computer Crimes Act, Communications and Multimedia Act, Companies Act, and Electronic Commerce Act",
+  "tests": [
+    {
+      "id": "my-001",
+      "category": "article_retrieval",
+      "description": "Retrieve Section 4 of the PDPA 2010 (Act 709) -- definitions including personal data (data peribadi)",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Personal Data Protection Act 2010",
+        "article": "4"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "text_contains": ["personal data", "data user"],
+        "fields_present": ["text", "article_number"],
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "my-002",
+      "category": "article_retrieval",
+      "description": "Retrieve Section 3 of the Computer Crimes Act 1997 (Act 563) -- unauthorised access to computer material",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Computer Crimes Act 1997",
+        "article": "3"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "any_result_contains": ["computer", "access", "unauthorised"],
+        "fields_present": ["text", "article_number"],
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "my-003",
+      "category": "article_retrieval",
+      "description": "Retrieve Section 1 of the Companies Act 2016 (Act 777) -- short title and commencement",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Companies Act 2016",
+        "article": "1"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "any_result_contains": ["Companies Act", "company"],
+        "fields_present": ["text", "article_number"],
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "my-004",
+      "category": "article_retrieval",
+      "description": "Retrieve Section 1 of the Communications and Multimedia Act 1998 (Act 588) -- short title and commencement",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Communications and Multimedia Act 1998",
+        "article": "1"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "any_result_contains": ["Communications", "Multimedia", "Act"],
+        "fields_present": ["text"],
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "my-005",
+      "category": "search",
+      "description": "Full-text search for 'data peribadi' returns PDPA provisions",
+      "tool": "search_legislation",
+      "input": {
+        "query": "data peribadi"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "min_results": 1,
+        "any_result_contains": ["Personal Data Protection", "data peribadi", "Act 709"]
+      }
+    },
+    {
+      "id": "my-006",
+      "category": "search",
+      "description": "Full-text search for 'jenayah komputer' returns Computer Crimes Act provisions",
+      "tool": "search_legislation",
+      "input": {
+        "query": "jenayah komputer"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "min_results": 1,
+        "any_result_contains": ["Computer Crimes", "computer", "access"]
+      }
+    },
+    {
+      "id": "my-007",
+      "category": "search",
+      "description": "Full-text search for 'syarikat' returns Companies Act provisions",
+      "tool": "search_legislation",
+      "input": {
+        "query": "syarikat"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "min_results": 1,
+        "any_result_contains": ["Companies Act", "company", "syarikat"]
+      }
+    },
+    {
+      "id": "my-008",
+      "category": "citation_roundtrip",
+      "description": "Citation for PDPA Section 6 (data protection principles) includes agc.gov.my URL pattern",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Personal Data Protection Act 2010",
+        "article": "6"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "citation_url_pattern": "agc\\.gov\\.my",
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "my-009",
+      "category": "citation_roundtrip",
+      "description": "Citation for Electronic Commerce Act Section 1 includes official identifier",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Electronic Commerce Act 2006",
+        "article": "1"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "fields_present": ["text"],
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "my-010",
+      "category": "eu_cross_reference",
+      "description": "PDPA cross-reference to GDPR -- Malaysia's PDPA 2010 predates GDPR but has similar principles",
+      "tool": "get_provision_eu_basis",
+      "input": {
+        "law_identifier": "Personal Data Protection Act 2010"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "any_result_contains": ["GDPR", "General Data Protection Regulation", "2016/679", "data protection"]
+      }
+    },
+    {
+      "id": "my-011",
+      "category": "negative_test",
+      "description": "Non-existent Malaysian Act returns graceful error or empty result",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Fictional Space Tourism Act 9999",
+        "article": "1"
+      },
+      "assertions": {
+        "handles_gracefully": true
+      }
+    },
+    {
+      "id": "my-012",
+      "category": "negative_test",
+      "description": "Malformed section number returns graceful error or empty result",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Personal Data Protection Act 2010",
+        "article": "999ZZZ-INVALID"
+      },
+      "assertions": {
+        "handles_gracefully": true
+      }
+    }
+  ]
+}

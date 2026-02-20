@@ -1,0 +1,56 @@
+{
+  "$schema": "./golden-hashes.schema.json",
+  "version": "1.0",
+  "mcp_name": "Malaysian Law MCP",
+  "jurisdiction": "MY",
+  "provisions": [
+    {
+      "id": "my-hash-001",
+      "description": "Federal Constitution Article 5 -- personal liberty; no person shall be deprived of life or personal liberty save in accordance with law",
+      "upstream_url": "https://www.agc.gov.my/agcportal/uploads/files/Publications/FC/Federal%20Consti%20(BI%20text).pdf",
+      "selector_hint": "Article 5 - Liberty of the person",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "No person shall be deprived of his life or personal liberty"
+    },
+    {
+      "id": "my-hash-002",
+      "description": "Personal Data Protection Act 2010 (Act 709) Section 1 -- short title, application, and commencement",
+      "upstream_url": "https://www.agc.gov.my/agcportal/uploads/files/Publications/LOM/EN/Act%20709%20-%20Personal%20Data%20Protection%20Act%202010.pdf",
+      "selector_hint": "Section 1 - Short title, application and commencement",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "Personal Data Protection Act 2010"
+    },
+    {
+      "id": "my-hash-003",
+      "description": "Computer Crimes Act 1997 (Act 563) Section 1 -- short title and commencement",
+      "upstream_url": "https://www.agc.gov.my/agcportal/uploads/files/Publications/LOM/EN/Act%20563%20-%20Computer%20Crimes%20Act%201997.pdf",
+      "selector_hint": "Section 1 - Short title",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "Computer Crimes Act 1997"
+    },
+    {
+      "id": "my-hash-004",
+      "description": "Companies Act 2016 (Act 777) Section 1 -- short title, commencement, and application",
+      "upstream_url": "https://www.agc.gov.my/agcportal/uploads/files/Publications/LOM/EN/Act%20777%20-%20Companies%20Act%202016.pdf",
+      "selector_hint": "Section 1 - Short title, commencement and application",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "Companies Act 2016"
+    },
+    {
+      "id": "my-hash-005",
+      "description": "Communications and Multimedia Act 1998 (Act 588) Section 1 -- short title, commencement, and application",
+      "upstream_url": "https://www.agc.gov.my/agcportal/uploads/files/Publications/LOM/EN/Act%20588%20-%20Communications%20and%20Multimedia%20Act%201998.pdf",
+      "selector_hint": "Section 1 - Short title",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "Communications and Multimedia Act 1998"
+    },
+    {
+      "id": "my-hash-006",
+      "description": "Electronic Commerce Act 2006 (Act 658) Section 1 -- short title and commencement",
+      "upstream_url": "https://www.agc.gov.my/agcportal/uploads/files/Publications/LOM/EN/Act%20658%20-%20Electronic%20Commerce%20Act%202006.pdf",
+      "selector_hint": "Section 1 - Short title",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "Electronic Commerce Act 2006"
+    }
+  ]
+}
