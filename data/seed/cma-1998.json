@@ -8,65 +8,414 @@
   "issued_date": "1998-11-01",
   "in_force_date": "1999-04-01",
   "url": "https://www.commonlii.org/my/legis/consol_act/cama1998330/",
-  "description": "Comprehensive regulation of communications and multimedia industries in Malaysia. Establishes MCMC and governs licensing, content regulation, and technical standards.",
+  "description": "An Act to provide for and to regulate the converging communications and multimedia industries, and for incidental matters. Establishes the Malaysian Communications and Multimedia Commission (MCMC) and governs licensing, content regulation, consumer protection, technical standards, and enforcement powers in the communications and multimedia sector.",
   "provisions": [
     {
+      "provision_ref": "s1",
+      "chapter": "Part I - Preliminary",
+      "section": "1",
+      "title": "Short title and commencement",
+      "content": "1. (1) This Act may be cited as the Communications and Multimedia Act 1998. (2) This Act comes into operation on a date to be appointed by the Minister by notification in the Gazette."
+    },
+    {
+      "provision_ref": "s2",
+      "chapter": "Part I - Preliminary",
+      "section": "2",
+      "title": "Application",
+      "content": "2. (1) This Act shall apply throughout Malaysia. (2) This Act shall apply to any person who provides or operates any network facilities, network service, applications service, or content applications service within or outside Malaysia if such provision or operation has an effect in Malaysia or involves the use of network facilities or network services situated in Malaysia."
+    },
+    {
       "provision_ref": "s3",
+      "chapter": "Part I - Preliminary",
       "section": "3",
       "title": "National policy objectives",
-      "content": "The national policy objectives for the communications and multimedia industry are — (a) to establish Malaysia as a major global centre and hub for communications and multimedia information and content services; (b) to promote a civil society where information-based services will provide the basis of continuing enhancements to quality of work and life; (c) to grow and nurture local information resources and cultural representation that facilitate the national identity and global diversity; (d) to regulate for the long-term benefit of the end user; (e) to promote a high level of consumer confidence in the communications and multimedia industry; (f) to ensure an equitable provision of affordable services over ubiquitous national infrastructure; (g) to create a robust applications environment for end users; (h) to facilitate the efficient allocation of resources such as skilled labour, capital, knowledge and national assets; (i) to promote the development of capabilities and skills within Malaysia's convergence industries; and (j) to ensure information security and network reliability and integrity."
+      "content": "3. The national policy objectives for the communications and multimedia industry are — (a) to establish Malaysia as a major global centre and hub for communications and multimedia information and content services; (b) to promote a civil society where information-based services will provide the basis of continuing enhancements to quality of work and life; (c) to grow and nurture local information resources and cultural representation that facilitate the national identity and global diversity; (d) to regulate for the long-term benefit of the end user; (e) to promote a high level of consumer confidence in the communications and multimedia industry; (f) to ensure an equitable provision of affordable services over ubiquitous national infrastructure; (g) to create a robust applications environment for end users; (h) to facilitate the efficient allocation of resources such as skilled labour, capital, knowledge and national assets; (i) to promote the development of capabilities and skills within Malaysia's convergence industries; and (j) to ensure information security and network reliability and integrity."
+    },
+    {
+      "provision_ref": "s4",
+      "chapter": "Part I - Preliminary",
+      "section": "4",
+      "title": "Regulatory principles",
+      "content": "4. The provision and regulation of communications and multimedia in Malaysia shall be based on the following principles — (a) not restricting or inhibiting the provision of services to consumers; (b) promoting fair competition and efficient market conduct; (c) promoting the interests of consumers; (d) ensuring an adequate level of consumer protection; (e) promoting transparency in decision-making by regulatory bodies; (f) minimising the financial and administrative burden on industry; (g) promoting self-regulation where appropriate; and (h) achieving a balance between the costs of regulation and the benefits to be achieved."
+    },
+    {
+      "provision_ref": "s6",
+      "chapter": "Part I - Preliminary",
+      "section": "6",
+      "title": "Interpretation",
+      "content": "6. In this Act, unless the context otherwise requires — 'applications service' means a service provided by means of, but not solely by means of, one or more network services; 'Commission' means the Malaysian Communications and Multimedia Commission established under the Malaysian Communications and Multimedia Commission Act 1998; 'content' means any sound, text, still picture, moving picture or other audio-visual representation, tactile representation or any combination of the foregoing which is capable of being created, manipulated, stored, retrieved or communicated electronically; 'content applications service' means a service which provides content by means of applications services; 'licensee' means a person who holds a licence granted under this Act; 'network facilities' means any element or combination of elements of physical infrastructure used principally for, or in connection with, the provision of network services, but does not include customer equipment; 'network service' means a service for carrying communications by means of guided or unguided electromagnetic energy."
+    },
+    {
+      "provision_ref": "s7",
+      "chapter": "Part I - Preliminary",
+      "section": "7",
+      "title": "Meaning of 'network facilities'",
+      "content": "7. (1) For the purposes of this Act, 'network facilities' means any element or combination of elements of physical infrastructure used principally for, or in connection with, the provision of network services, but does not include customer equipment. (2) Without limiting the generality of subsection (1), network facilities include — (a) satellite earth stations; (b) broadband fibre optic cables; (c) telecommunications lines; (d) radiocommunications transmitters and receivers; (e) cables; (f) switching equipment; and (g) any other thing as determined by the Minister."
+    },
+    {
+      "provision_ref": "s8",
+      "chapter": "Part I - Preliminary",
+      "section": "8",
+      "title": "Meaning of 'network service'",
+      "content": "8. For the purposes of this Act, 'network service' means a service for carrying communications by means of guided or unguided electromagnetic energy, and includes — (a) broadcasting distribution services; (b) cellular mobile telecommunications services; (c) public switched telecommunications services; (d) space services; (e) subscription television services; and (f) any other service as determined by the Minister."
+    },
+    {
+      "provision_ref": "s9",
+      "chapter": "Part I - Preliminary",
+      "section": "9",
+      "title": "Meaning of 'applications service'",
+      "content": "9. For the purposes of this Act, 'applications service' means a service provided by means of, but not solely by means of, one or more network services, and includes — (a) electronic commerce; (b) voice over Internet protocol; (c) messaging services; (d) electronic mail; and (e) any other service as determined by the Minister."
+    },
+    {
+      "provision_ref": "s10",
+      "chapter": "Part I - Preliminary",
+      "section": "10",
+      "title": "Meaning of 'content applications service'",
+      "content": "10. For the purposes of this Act, 'content applications service' means a service which provides content by means of applications services, and includes — (a) traditional broadcasting; (b) online publishing; (c) online databases; (d) online information services; and (e) any other service as determined by the Minister."
+    },
+    {
+      "provision_ref": "s30",
+      "chapter": "Part II - Licensing",
+      "section": "30",
+      "title": "Licence required for network facilities",
+      "content": "30. (1) No person shall own or provide any network facilities unless the person holds a valid individual licence or a class licence granted under this Act. (2) A person who contravenes subsection (1) commits an offence."
+    },
+    {
+      "provision_ref": "s31",
+      "chapter": "Part II - Licensing",
+      "section": "31",
+      "title": "Licence required for network services",
+      "content": "31. (1) No person shall provide any network service unless the person holds a valid individual licence or class licence granted under this Act. (2) A person who contravenes subsection (1) commits an offence."
+    },
+    {
+      "provision_ref": "s32",
+      "chapter": "Part II - Licensing",
+      "section": "32",
+      "title": "Licence required for applications services",
+      "content": "32. (1) No person shall provide any applications service unless the person holds a valid individual licence or class licence granted under this Act. (2) A person who contravenes subsection (1) commits an offence."
+    },
+    {
+      "provision_ref": "s33",
+      "chapter": "Part II - Licensing",
+      "section": "33",
+      "title": "Licence required for content applications services",
+      "content": "33. (1) No person shall provide any content applications service unless the person holds a valid individual licence or class licence granted under this Act. (2) A person who contravenes subsection (1) commits an offence."
     },
     {
       "provision_ref": "s126",
+      "chapter": "Part V - Consumer Protection",
       "section": "126",
-      "title": "Content applications service provider",
-      "content": "No content applications service provider, or other person using a content applications service, shall provide content which is indecent, obscene, false, menacing, or offensive in character with intent to annoy, abuse, threaten or harass any person."
+      "title": "Prohibition on undue discrimination",
+      "content": "126. A licensee shall not discriminate unduly against another licensee in the provision of services to that other licensee. Without limiting the generality of subsection (1), a licensee may be considered to be discriminating unduly if the licensee imposes or gives dissimilar conditions to persons of equal standing in respect of any particular service."
+    },
+    {
+      "provision_ref": "s127",
+      "chapter": "Part V - Consumer Protection",
+      "section": "127",
+      "title": "Consumer protection",
+      "content": "127. (1) The Commission may make rules for the protection of consumers of communications and multimedia services. (2) Without limiting the generality of subsection (1), such rules may make provisions for — (a) service quality standards; (b) billing and charging practices; (c) complaint handling procedures; (d) privacy and confidentiality of consumer information; and (e) any other matter as the Commission considers necessary for consumer protection."
+    },
+    {
+      "provision_ref": "s128",
+      "chapter": "Part V - Consumer Protection",
+      "section": "128",
+      "title": "Universal service provision",
+      "content": "128. (1) The Commission shall establish a universal service provision programme to ensure the availability of communications and multimedia services at affordable prices throughout Malaysia. (2) The Minister may, on the recommendation of the Commission, designate any licensee as a universal service provider."
+    },
+    {
+      "provision_ref": "s129",
+      "chapter": "Part V - Consumer Protection",
+      "section": "129",
+      "title": "Rate regulations",
+      "content": "129. (1) The Commission may, where it considers it necessary in the interest of consumers, determine the rates chargeable by any licensee for any service. (2) In determining rates, the Commission shall take into account — (a) the costs of providing the service; (b) the need to ensure adequate returns to the licensee; (c) the interests of consumers; and (d) the promotion of competition."
+    },
+    {
+      "provision_ref": "s130",
+      "chapter": "Part V - Consumer Protection",
+      "section": "130",
+      "title": "Duty to provide information to consumers",
+      "content": "130. (1) A licensee shall provide clear, accurate and up-to-date information to consumers regarding — (a) the terms and conditions of its services; (b) the rates charged for its services; (c) the quality of its services; and (d) complaint handling procedures."
+    },
+    {
+      "provision_ref": "s131",
+      "chapter": "Part V - Consumer Protection",
+      "section": "131",
+      "title": "Confidentiality of consumer information",
+      "content": "131. (1) A licensee shall not disclose any information concerning the affairs of a consumer, including information concerning any service provided, to any person except — (a) with the consent of the consumer; (b) as required by any court of competent jurisdiction; (c) as required by any written law; or (d) for the purpose of an investigation under this Act. (2) A licensee who contravenes this section commits an offence."
+    },
+    {
+      "provision_ref": "s132",
+      "chapter": "Part V - Consumer Protection",
+      "section": "132",
+      "title": "Numbering and electronic addressing",
+      "content": "132. (1) The Commission shall manage and administer the numbering and electronic addressing plan for communications and multimedia in Malaysia. (2) No person shall use any number or electronic address for the provision of any network service or applications service unless such number or electronic address has been allocated by the Commission."
+    },
+    {
+      "provision_ref": "s188",
+      "chapter": "Part VI - Content Regulation",
+      "section": "188",
+      "title": "Content Forum",
+      "content": "188. (1) The Commission shall designate a body to be known as the Content Forum for the purpose of developing and maintaining a Content Code. (2) The Content Forum shall consist of representatives from the communications and multimedia industry and any other relevant bodies as determined by the Commission."
+    },
+    {
+      "provision_ref": "s189",
+      "chapter": "Part VI - Content Regulation",
+      "section": "189",
+      "title": "Content Code",
+      "content": "189. (1) The Content Forum shall prepare a Content Code which shall contain guidelines and procedures for good practice and standards of content disseminated to the public through the communications and multimedia industry. (2) The Content Code shall address — (a) content which is indecent, obscene, false, menacing, or offensive in character; (b) the portrayal of violence; (c) the portrayal of dangerous or illegal acts; (d) content that infringes intellectual property rights; (e) content which is harmful to minors; (f) advertising standards; and (g) any other matters as the Commission considers appropriate."
+    },
+    {
+      "provision_ref": "s190",
+      "chapter": "Part VI - Content Regulation",
+      "section": "190",
+      "title": "Complaints bureau",
+      "content": "190. The Content Forum shall establish a complaints bureau to receive and address complaints from the public in relation to content disseminated through the communications and multimedia industry."
+    },
+    {
+      "provision_ref": "s191",
+      "chapter": "Part VI - Content Regulation",
+      "section": "191",
+      "title": "Registration of Content Code",
+      "content": "191. (1) The Content Forum shall, upon the preparation of the Content Code, submit the Content Code to the Commission for registration. (2) The Commission may register the Content Code if it is satisfied that the Content Code addresses the matters in section 189. (3) The Commission may direct the Content Forum to amend the Content Code."
+    },
+    {
+      "provision_ref": "s192",
+      "chapter": "Part VI - Content Regulation",
+      "section": "192",
+      "title": "Compliance with registered Content Code",
+      "content": "192. (1) A person providing content applications services shall comply with the registered Content Code. (2) The Commission may, by written notice, direct any person to comply with the registered Content Code."
+    },
+    {
+      "provision_ref": "s193",
+      "chapter": "Part VI - Content Regulation",
+      "section": "193",
+      "title": "Directions by Commission on content",
+      "content": "193. Where the Commission is satisfied that a person is not complying with the registered Content Code, the Commission may direct — (a) the person to cease the provision of, or to restrict access to, the content; (b) the person to comply with the registered Content Code within a specified period; (c) the licensee to take such action as the Commission deems fit."
+    },
+    {
+      "provision_ref": "s194",
+      "chapter": "Part VI - Content Regulation",
+      "section": "194",
+      "title": "Ministerial direction on content",
+      "content": "194. (1) The Minister may, on the recommendation of the Commission, issue a direction to any content applications service provider — (a) requiring the content applications service provider to remove content; (b) requiring the content applications service provider to restrict access to content; or (c) requiring the content applications service provider to take such other action as the Minister considers necessary in the public interest. (2) A content applications service provider who fails to comply with a direction under this section commits an offence."
+    },
+    {
+      "provision_ref": "s195",
+      "chapter": "Part VI - Content Regulation",
+      "section": "195",
+      "title": "Licensing of content applications service",
+      "content": "195. (1) The Commission may impose specific conditions on the licence of a content applications service provider relating to — (a) the type of content that may be provided; (b) the measures to be taken to prevent access by minors to harmful content; (c) the display of ratings or classifications for content; and (d) compliance with the Content Code."
+    },
+    {
+      "provision_ref": "s196",
+      "chapter": "Part VI - Content Regulation",
+      "section": "196",
+      "title": "Self-regulation by industry",
+      "content": "196. (1) The Commission shall encourage self-regulation by the communications and multimedia industry in relation to content. (2) The Commission may recognise any self-regulatory body established by the industry for the purpose of developing and enforcing codes of practice."
+    },
+    {
+      "provision_ref": "s197",
+      "chapter": "Part VI - Content Regulation",
+      "section": "197",
+      "title": "Content filtering",
+      "content": "197. (1) The Commission may require any network service provider or applications service provider to implement content filtering measures where it considers it necessary in the public interest. (2) Content filtering measures shall be proportionate and shall not unduly restrict the provision of legitimate content."
+    },
+    {
+      "provision_ref": "s198",
+      "chapter": "Part VI - Content Regulation",
+      "section": "198",
+      "title": "Prohibition on providing false content",
+      "content": "198. No person shall use any network facilities, network service or applications service to provide false content which is likely to — (a) be detrimental to the national interest; (b) cause public alarm or public disorder; or (c) be detrimental to the provision of network facilities, network services or applications services."
     },
     {
       "provision_ref": "s211",
+      "chapter": "Part VI - Content Regulation",
       "section": "211",
       "title": "Prohibition on provision of offensive content",
-      "content": "No content applications service provider, or other person using a content applications service, shall provide content which is indecent, obscene, false, menacing, or offensive in character with intent to annoy, abuse, threaten or harass any person. A person who contravenes subsection (1) commits an offence and shall, on conviction, be liable to a fine not exceeding fifty thousand ringgit or to imprisonment for a term not exceeding one year or to both and shall also be liable to a further fine of one thousand ringgit for every day or part of a day during which the offence is continued after conviction."
+      "content": "211. (1) No content applications service provider, or other person using a content applications service, shall provide content which is indecent, obscene, false, menacing, or offensive in character with intent to annoy, abuse, threaten or harass any person. (2) A person who contravenes subsection (1) commits an offence and shall, on conviction, be liable to a fine not exceeding fifty thousand ringgit or to imprisonment for a term not exceeding one year or to both and shall also be liable to a further fine of one thousand ringgit for every day or part of a day during which the offence is continued after conviction."
+    },
+    {
+      "provision_ref": "s212",
+      "chapter": "Part VI - Content Regulation",
+      "section": "212",
+      "title": "Protection of children",
+      "content": "212. (1) A content applications service provider shall take reasonable steps to ensure that content which is unsuitable for children is not made available to children. (2) The Commission may issue guidelines on what constitutes content unsuitable for children and the reasonable steps to be taken by content applications service providers."
+    },
+    {
+      "provision_ref": "s222",
+      "chapter": "Part VII - Digital Signature",
+      "section": "222",
+      "title": "Application of Part VII",
+      "content": "222. This Part shall apply to digital signatures used to authenticate electronic messages in the communications and multimedia industry."
     },
     {
       "provision_ref": "s233",
+      "chapter": "Part VIII - General Offences",
       "section": "233",
       "title": "Improper use of network facilities or network service",
-      "content": "A person who — (a) by means of any network facilities or network service or applications service knowingly — (i) makes, creates or solicits; and (ii) initiates the transmission of, any comment, request, suggestion or other communication which is obscene, indecent, false, menacing or offensive in character with intent to annoy, abuse, threaten or harass another person; or (b) initiates a communication using any applications service, whether continuously, repeatedly or otherwise, during which communication may or may not ensue, with or without disclosing his identity and with intent to annoy, abuse, threaten or harass any person at any number, commits an offence. A person who contravenes this section commits an offence and shall, on conviction, be liable to a fine not exceeding fifty thousand ringgit or to imprisonment for a term not exceeding one year or to both."
+      "content": "233. (1) A person who — (a) by means of any network facilities or network service or applications service knowingly — (i) makes, creates or solicits; and (ii) initiates the transmission of, any comment, request, suggestion or other communication which is obscene, indecent, false, menacing or offensive in character with intent to annoy, abuse, threaten or harass another person; or (b) initiates a communication using any applications service, whether continuously, repeatedly or otherwise, during which communication may or may not ensue, with or without disclosing his identity and with intent to annoy, abuse, threaten or harass any person at any number, commits an offence. (2) A person who contravenes this section commits an offence and shall, on conviction, be liable to a fine not exceeding fifty thousand ringgit or to imprisonment for a term not exceeding one year or to both and shall also be liable to a further fine of one thousand ringgit for every day during which the offence is continued after conviction."
     },
     {
       "provision_ref": "s234",
+      "chapter": "Part VIII - General Offences",
       "section": "234",
       "title": "Interception and disclosure of communications",
-      "content": "A person who, including the use of any network facilities, network service or applications service, intentionally intercepts, attempts to intercept, or procures any other person to intercept or attempt to intercept, any communication, commits an offence and shall, on conviction, be liable to a fine not exceeding one hundred thousand ringgit or to imprisonment for a term not exceeding two years or to both."
+      "content": "234. (1) A person who, including the use of any network facilities, network service or applications service, intentionally intercepts, attempts to intercept, or procures any other person to intercept or attempt to intercept, any communication, commits an offence. (2) A person who contravenes this section commits an offence and shall, on conviction, be liable to a fine not exceeding one hundred thousand ringgit or to imprisonment for a term not exceeding two years or to both. (3) This section shall not apply to — (a) the lawful exercise of any power conferred under any written law; (b) any act done by an officer of the Commission in the exercise of his duties under this Act; or (c) any interception carried out by a network service provider in the ordinary course of its duty."
     },
     {
       "provision_ref": "s235",
+      "chapter": "Part VIII - General Offences",
       "section": "235",
-      "title": "Fraud in relation to communications",
-      "content": "Any person who with dishonest intention uses any network facilities, network service or applications service to defraud another person commits an offence and shall, on conviction, be liable to a fine not exceeding three hundred thousand ringgit or to imprisonment for a term not exceeding five years or to both."
+      "title": "Fraud in relation to use of network facilities, services, etc.",
+      "content": "235. Any person who with dishonest intention uses any network facilities, network service or applications service to defraud another person commits an offence and shall, on conviction, be liable to a fine not exceeding three hundred thousand ringgit or to imprisonment for a term not exceeding five years or to both."
+    },
+    {
+      "provision_ref": "s236",
+      "chapter": "Part VIII - General Offences",
+      "section": "236",
+      "title": "Damage to network facilities",
+      "content": "236. (1) A person who wilfully or negligently damages, destroys, removes, or tampers with any network facilities commits an offence. (2) A person who contravenes this section shall, on conviction, be liable to a fine not exceeding one hundred thousand ringgit or to imprisonment for a term not exceeding three years or to both."
+    },
+    {
+      "provision_ref": "s237",
+      "chapter": "Part VIII - General Offences",
+      "section": "237",
+      "title": "Misuse of access device",
+      "content": "237. A person who produces, traffics in, has control or custody of, or possesses any access device, counterfeit access device, or device-making equipment with intent to use it fraudulently to obtain any network facility, network service, applications service, or content applications service, commits an offence."
+    },
+    {
+      "provision_ref": "s238",
+      "chapter": "Part VIII - General Offences",
+      "section": "238",
+      "title": "Prohibition on provision of fraudulent content",
+      "content": "238. A person shall not use any network facilities, network service or applications service for the transmission or reception of any content which he knows to be fraudulent."
     },
     {
       "provision_ref": "s252",
+      "chapter": "Part IX - Enforcement",
       "section": "252",
       "title": "Powers of the Commission",
-      "content": "The Malaysian Communications and Multimedia Commission shall have the powers — (a) to enquire into, and take action on, complaints from any licensee or any consumer of communications and multimedia services; (b) to conduct investigations where it has reason to believe that a provision of this Act has been breached."
+      "content": "252. (1) The Commission shall have the powers to — (a) enquire into and take action on complaints from any licensee or consumer; (b) conduct investigations where it has reason to believe that a provision of this Act has been breached; (c) issue directions to licensees as the Commission considers necessary; and (d) take any enforcement action as provided under this Act."
+    },
+    {
+      "provision_ref": "s253",
+      "chapter": "Part IX - Enforcement",
+      "section": "253",
+      "title": "Power to require information",
+      "content": "253. (1) The Commission may, by written notice, require any person to provide any information or document that the Commission considers necessary for the purposes of carrying out its functions under this Act. (2) A person who fails to comply with a notice under subsection (1) commits an offence."
+    },
+    {
+      "provision_ref": "s254",
+      "chapter": "Part IX - Enforcement",
+      "section": "254",
+      "title": "Power to conduct investigation",
+      "content": "254. (1) The Commission may direct any authorised officer to conduct an investigation if the Commission has reason to suspect that any provision of this Act has been contravened. (2) An authorised officer conducting an investigation shall have the power to — (a) require the production of, and inspect and make copies of, any document; (b) require any person to provide an explanation of any document; (c) enter any premises and search for evidence."
+    },
+    {
+      "provision_ref": "s255",
+      "chapter": "Part IX - Enforcement",
+      "section": "255",
+      "title": "Search warrant",
+      "content": "255. (1) If it appears to a Magistrate upon written information on oath that there is reasonable cause to believe that any premises are being used for the commission of an offence under this Act, the Magistrate may issue a warrant authorising any authorised officer to enter and search the premises."
+    },
+    {
+      "provision_ref": "s256",
+      "chapter": "Part IX - Enforcement",
+      "section": "256",
+      "title": "Search without warrant",
+      "content": "256. Where an authorised officer has reasonable cause to believe that by reason of delay in obtaining a search warrant, the object of the search is likely to be frustrated, he may enter any premises and exercise all the powers referred to in section 255 as if he were authorised to do so by a warrant issued under that section."
+    },
+    {
+      "provision_ref": "s257",
+      "chapter": "Part IX - Enforcement",
+      "section": "257",
+      "title": "Seizure of evidence",
+      "content": "257. An authorised officer may seize and detain any document, record, computer or equipment which he has reason to believe is evidence of the commission of an offence under this Act."
+    },
+    {
+      "provision_ref": "s258",
+      "chapter": "Part IX - Enforcement",
+      "section": "258",
+      "title": "Power of arrest",
+      "content": "258. An authorised officer may arrest without warrant any person whom he reasonably suspects of having committed an offence under this Act if — (a) the person refuses to furnish his name and address; (b) the person furnishes an address outside Malaysia; or (c) there is reason to believe the person is likely to abscond."
+    },
+    {
+      "provision_ref": "s259",
+      "chapter": "Part IX - Enforcement",
+      "section": "259",
+      "title": "Obstruction of authorised officer",
+      "content": "259. Any person who obstructs, hinders or delays an authorised officer in the exercise of any of his powers under this Act commits an offence and shall, on conviction, be liable to a fine not exceeding twenty thousand ringgit or to imprisonment for a term not exceeding one year or to both."
+    },
+    {
+      "provision_ref": "s260",
+      "chapter": "Part IX - Enforcement",
+      "section": "260",
+      "title": "Compounding of offences",
+      "content": "260. (1) The Commission may, with the consent of the Public Prosecutor, compound any offence under this Act by accepting from the person suspected of committing the offence a sum of money not exceeding fifty per centum of the maximum fine for that offence."
+    },
+    {
+      "provision_ref": "s261",
+      "chapter": "Part IX - Enforcement",
+      "section": "261",
+      "title": "Prosecution",
+      "content": "261. No prosecution shall be instituted for any offence under this Act except by or with the written consent of the Public Prosecutor."
+    },
+    {
+      "provision_ref": "s262",
+      "chapter": "Part IX - Enforcement",
+      "section": "262",
+      "title": "Offences by body corporate",
+      "content": "262. Where a body corporate commits an offence under this Act, any person who at the time of the commission of the offence was a director, chief executive officer, chief operating officer, manager, secretary or other similar officer of the body corporate, or was purporting to act in any such capacity, shall be deemed to have committed the offence unless he proves that the offence was committed without his consent or connivance and that he had exercised all such diligence to prevent the commission of the offence as he ought to have exercised."
+    },
+    {
+      "provision_ref": "s263",
+      "chapter": "Part IX - Enforcement",
+      "section": "263",
+      "title": "General penalty",
+      "content": "263. Any person who commits an offence under this Act for which no penalty is expressly provided shall, on conviction, be liable to a fine not exceeding fifty thousand ringgit or to imprisonment for a term not exceeding one year or to both."
+    },
+    {
+      "provision_ref": "s264",
+      "chapter": "Part IX - Enforcement",
+      "section": "264",
+      "title": "Jurisdiction",
+      "content": "264. Notwithstanding any other written law, the Sessions Court shall have jurisdiction to try any offence under this Act and to award any punishment provided for under this Act."
     }
   ],
   "definitions": [
     {
       "term": "network facilities",
-      "definition": "\"network facilities\" means any element or combination of elements of physical infrastructure used principally for, or in connection with, the provision of network services, but does not include customer equipment",
+      "definition": "Any element or combination of elements of physical infrastructure used principally for, or in connection with, the provision of network services, but does not include customer equipment.",
       "source_provision": "s6"
     },
     {
-      "term": "content applications service",
-      "definition": "\"content applications service\" means a service provided by an applications service provider that provides content",
+      "term": "network service",
+      "definition": "A service for carrying communications by means of guided or unguided electromagnetic energy.",
       "source_provision": "s6"
     },
     {
       "term": "applications service",
-      "definition": "\"applications service\" means a service provided by means of, but not solely by means of, one or more network services",
+      "definition": "A service provided by means of, but not solely by means of, one or more network services.",
+      "source_provision": "s6"
+    },
+    {
+      "term": "content applications service",
+      "definition": "A service which provides content by means of applications services.",
+      "source_provision": "s6"
+    },
+    {
+      "term": "content",
+      "definition": "Any sound, text, still picture, moving picture or other audio-visual representation, tactile representation or any combination of the foregoing which is capable of being created, manipulated, stored, retrieved or communicated electronically.",
+      "source_provision": "s6"
+    },
+    {
+      "term": "Commission",
+      "definition": "The Malaysian Communications and Multimedia Commission established under the Malaysian Communications and Multimedia Commission Act 1998.",
+      "source_provision": "s6"
+    },
+    {
+      "term": "licensee",
+      "definition": "A person who holds a licence granted under this Act.",
       "source_provision": "s6"
     }
   ]

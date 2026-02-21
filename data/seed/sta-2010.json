@@ -8,42 +8,328 @@
   "issued_date": "2010-06-10",
   "in_force_date": "2011-07-01",
   "url": "https://www.commonlii.org/my/legis/consol_act/sta2010199/",
-  "description": "Controls export, transhipment, transit, and brokering of strategic items, including technology and software relevant to weapons of mass destruction and military end-use.",
+  "description": "An Act to provide for control over the export, transhipment, transit and brokering of strategic items, including arms and related material, and other activities that will or may facilitate the design, development and production of weapons of mass destruction and their delivery systems, and to provide for other matters connected therewith.",
   "provisions": [
     {
+      "provision_ref": "s1",
+      "chapter": "Part I - Preliminary",
+      "section": "1",
+      "title": "Short title and commencement",
+      "content": "1. (1) This Act may be cited as the Strategic Trade Act 2010. (2) This Act comes into operation on a date to be appointed by the Minister by notification in the Gazette."
+    },
+    {
       "provision_ref": "s2",
+      "chapter": "Part I - Preliminary",
       "section": "2",
       "title": "Interpretation",
-      "content": "In this Act, unless the context otherwise requires — \"strategic item\" means any item as set out in the Strategic Trade (Strategic Items) Order; \"unlisted item\" means any item not included in the Strategic Trade (Strategic Items) Order that can be used in whole or in part for or in connection with the development, production, handling, operation, maintenance, storage, detection, identification or dissemination of weapons of mass destruction or their means of delivery, including missiles capable of delivering such weapons, or any item that can be used in whole or in part for military end-use."
+      "content": "2. In this Act, unless the context otherwise requires — 'arms and related material' means any form of weapon, ammunition, military vehicle and military or paramilitary equipment, and spare parts for the aforesaid, and includes any technology or item which can be used to design, develop, produce, or use any of the aforesaid; 'brokering' means any act by which a person as an intermediary arranges or negotiates a transaction for the purchase, sale or supply of strategic items from one foreign country for transfer to another foreign country; 'Controller' means the Strategic Trade Controller appointed under section 3; 'end-user' means the person who receives and ultimately uses the strategic items; 'export' means to take or cause to be taken out of Malaysia by any means any strategic item; 'permit' means a permit granted under Part II; 'restricted end-user' means any person or entity listed by the Minister under section 15; 'strategic item' means any item as set out in the Strategic Trade (Strategic Items) Order, and includes any unlisted item that is or may be intended for use in connection with any activity relating to weapons of mass destruction; 'Strategic Items List' means the list prescribed by the Minister under section 9; 'transhipment' means the removal of strategic items from the conveyance on which they were brought into Malaysia and the placing of such items on the same or another conveyance for the purpose of bringing them out of Malaysia; 'transit' means the bringing into and taking out of Malaysia of strategic items from a foreign country through Malaysia on the same conveyance; 'unlisted item' means any item not included in the Strategic Trade (Strategic Items) Order that can be used in whole or in part for or in connection with the development, production, handling, operation, maintenance, storage, detection, identification or dissemination of weapons of mass destruction or their means of delivery; 'weapon of mass destruction' means any weapon designed to cause death or serious bodily injury through the release, dissemination or impact of toxic chemicals or their precursors, any disease organism, radiation or radioactivity."
+    },
+    {
+      "provision_ref": "s3",
+      "chapter": "Part I - Preliminary",
+      "section": "3",
+      "title": "Strategic Trade Controller",
+      "content": "3. (1) The Minister shall appoint a Strategic Trade Controller who shall be responsible for the control and regulation of activities under this Act. (2) The Controller shall have such powers and duties as are conferred or imposed on him by this Act."
+    },
+    {
+      "provision_ref": "s4",
+      "chapter": "Part I - Preliminary",
+      "section": "4",
+      "title": "Appointment of officers",
+      "content": "4. (1) The Minister may appoint such number of Deputy Controllers, Senior Assistant Controllers and Assistant Controllers as may be necessary to assist the Controller. (2) The Controller may in writing delegate any of his powers or duties to any officer appointed under subsection (1)."
+    },
+    {
+      "provision_ref": "s5",
+      "chapter": "Part I - Preliminary",
+      "section": "5",
+      "title": "Authorised officers",
+      "content": "5. Officers of customs, police, immigration, and any other public officer designated by the Minister, shall be authorised officers for the purposes of enforcement of this Act."
+    },
+    {
+      "provision_ref": "s6",
+      "chapter": "Part I - Preliminary",
+      "section": "6",
+      "title": "Application",
+      "content": "6. (1) This Act shall apply to all persons in Malaysia and to all citizens of Malaysia outside Malaysia. (2) This Act shall apply to any act connected with the export, transhipment, transit or brokering of strategic items regardless of the place where the strategic items are located."
+    },
+    {
+      "provision_ref": "s7",
+      "chapter": "Part II - Permits and Prohibitions",
+      "section": "7",
+      "title": "Prohibition of activities without permit",
+      "content": "7. No person shall — (a) export any strategic item from Malaysia; (b) tranship any strategic item; (c) bring in transit any strategic item through Malaysia; or (d) broker any strategic item, without a valid permit issued by the Controller."
     },
     {
       "provision_ref": "s8",
+      "chapter": "Part II - Permits and Prohibitions",
       "section": "8",
-      "title": "Prohibition on export of strategic items without permit",
-      "content": "No person shall export or attempt to export any strategic item from Malaysia without a valid permit issued by the Strategic Trade Controller. A person who contravenes this section commits an offence and shall on conviction be liable to a fine not exceeding ten million ringgit or to imprisonment for a term not exceeding five years or to both."
+      "title": "Prohibition on export without permit",
+      "content": "8. (1) No person shall export or attempt to export any strategic item from Malaysia without a valid permit issued by the Controller. (2) A person who contravenes subsection (1) commits an offence and shall on conviction be liable to a fine not exceeding ten million ringgit or to imprisonment for a term not exceeding five years or to both."
+    },
+    {
+      "provision_ref": "s9",
+      "chapter": "Part II - Permits and Prohibitions",
+      "section": "9",
+      "title": "Strategic Items List",
+      "content": "9. (1) The Minister shall, by order published in the Gazette, prescribe a list of strategic items. (2) The Strategic Items List may include — (a) nuclear-related items; (b) chemical and biological weapons-related items; (c) missile technology-related items; (d) military and dual-use items; (e) arms and related material; and (f) any technology or software associated with any of the items referred to in paragraphs (a) to (e). (3) The Minister may at any time amend the Strategic Items List."
+    },
+    {
+      "provision_ref": "s10",
+      "chapter": "Part II - Permits and Prohibitions",
+      "section": "10",
+      "title": "Application for permit",
+      "content": "10. (1) An application for a permit shall be made to the Controller in the prescribed form and shall be accompanied by — (a) such documents, information and fee as may be prescribed; (b) a statement of the end-use and end-user of the strategic items; and (c) any other information as the Controller may require. (2) The Controller may, in processing an application, request additional information and consult with any relevant Government agency."
+    },
+    {
+      "provision_ref": "s11",
+      "chapter": "Part II - Permits and Prohibitions",
+      "section": "11",
+      "title": "Grant or refusal of permit",
+      "content": "11. (1) Upon receiving an application, the Controller may grant the permit subject to conditions or refuse to grant the permit. (2) In deciding whether to grant or refuse a permit, the Controller shall consider — (a) the nature and intended use of the strategic items; (b) the country of destination; (c) the end-user and the end-use; (d) Malaysia's international obligations; (e) Malaysia's foreign policy interests; (f) the national security interests of Malaysia; and (g) any other matters the Controller considers relevant."
+    },
+    {
+      "provision_ref": "s12",
+      "chapter": "Part II - Permits and Prohibitions",
+      "section": "12",
+      "title": "Conditions of permit",
+      "content": "12. (1) The Controller may impose conditions on a permit including — (a) the quantity and specifications of the strategic items; (b) the country or countries to which the items may be exported; (c) the end-user of the items; (d) the purpose for which the items may be used; (e) a requirement to provide delivery verification; and (f) any other condition the Controller thinks fit. (2) A permit holder who contravenes any condition of the permit commits an offence and shall on conviction be liable to a fine not exceeding five million ringgit or to imprisonment for a term not exceeding three years or to both."
     },
     {
       "provision_ref": "s13",
+      "chapter": "Part II - Permits and Prohibitions",
       "section": "13",
       "title": "Catch-all provision",
-      "content": "No person shall export, tranship, transit or broker any unlisted item if the person knows or has reason to believe that the unlisted item is or may be intended, in its entirety or in part, for use in connection with any activity relating to weapons of mass destruction."
+      "content": "13. (1) No person shall export, tranship, transit or broker any unlisted item if the person knows or has reason to believe that the unlisted item is or may be intended, in its entirety or in part, for use in connection with any activity relating to weapons of mass destruction or their delivery systems. (2) The Controller may, by notification to any person, inform the person that an item is or may be intended for a prohibited purpose, and upon receipt of such notification, the person shall be deemed to have the requisite knowledge."
+    },
+    {
+      "provision_ref": "s14",
+      "chapter": "Part II - Permits and Prohibitions",
+      "section": "14",
+      "title": "Revocation and suspension of permit",
+      "content": "14. (1) The Controller may revoke or suspend a permit if — (a) the permit was obtained by fraud, misrepresentation or concealment of material facts; (b) the permit holder has contravened any condition of the permit; (c) the permit holder has contravened any provision of this Act; (d) the revocation or suspension is necessary in the interest of national security or to comply with Malaysia's international obligations; or (e) it is expedient to do so in the public interest. (2) Before revoking or suspending a permit, the Controller shall give the permit holder written notice and an opportunity to make representations."
+    },
+    {
+      "provision_ref": "s15",
+      "chapter": "Part III - End-User Controls",
+      "section": "15",
+      "title": "Restricted end-users",
+      "content": "15. (1) The Minister may, by order published in the Gazette, list any person or entity as a restricted end-user if the Minister has reasonable grounds to believe that the person or entity is involved, or is likely to be involved, in activities related to the development, production, handling, maintenance, storage or dissemination of weapons of mass destruction or their delivery systems. (2) No person shall export any strategic item to a restricted end-user without a permit from the Controller."
+    },
+    {
+      "provision_ref": "s16",
+      "chapter": "Part III - End-User Controls",
+      "section": "16",
+      "title": "End-user certificate",
+      "content": "16. (1) The Controller may require an end-user certificate to accompany any permit application. (2) An end-user certificate shall contain — (a) the identity of the end-user; (b) the country of destination; (c) a description and quantity of the strategic items; (d) the purpose for which the items will be used; and (e) an undertaking that the items will not be re-exported or diverted without the prior approval of the Controller."
+    },
+    {
+      "provision_ref": "s17",
+      "chapter": "Part III - End-User Controls",
+      "section": "17",
+      "title": "Delivery verification",
+      "content": "17. The Controller may require a permit holder to provide proof that the strategic items have been delivered to the specified end-user in the country of destination."
     },
     {
       "provision_ref": "s18",
+      "chapter": "Part IV - Registration of Brokers",
       "section": "18",
-      "title": "End-user certificate",
-      "content": "The Strategic Trade Controller may require any applicant for a permit under this Act to produce an end-user certificate from the government of the country of final destination, or such other document as may be required. The end-user certificate shall contain — (a) a description of the strategic item; (b) the quantity of the strategic item; (c) the identity of the end-user; and (d) a statement of the specific end-use of the strategic item."
+      "title": "Registration of brokers",
+      "content": "18. (1) No person shall engage in any brokering of strategic items unless the person is registered as a broker with the Controller. (2) An application for registration shall be made in the prescribed form. (3) A person who contravenes subsection (1) commits an offence and shall on conviction be liable to a fine not exceeding one million ringgit or to imprisonment for a term not exceeding two years or to both."
+    },
+    {
+      "provision_ref": "s19",
+      "chapter": "Part IV - Registration of Brokers",
+      "section": "19",
+      "title": "Duties of registered brokers",
+      "content": "19. A registered broker shall — (a) keep records of all brokering transactions for a period of not less than six years; (b) furnish such returns and information as the Controller may require; (c) comply with all conditions imposed by the Controller; and (d) notify the Controller of any change in the information provided in the registration application."
+    },
+    {
+      "provision_ref": "s20",
+      "chapter": "Part V - Enforcement",
+      "section": "20",
+      "title": "Powers of authorised officers",
+      "content": "20. (1) An authorised officer shall have the power to — (a) enter any premises, including any vessel, aircraft or vehicle, at any time for the purpose of inspecting any strategic item; (b) require the production of and inspect, make copies of, or take extracts from, any document, book, record or electronic data; (c) seize and detain any strategic item, document, book, record, electronic data or other thing which the officer reasonably suspects has been used or will be used in the commission of an offence; and (d) stop, board and search any vessel, aircraft or vehicle."
+    },
+    {
+      "provision_ref": "s21",
+      "chapter": "Part V - Enforcement",
+      "section": "21",
+      "title": "Search warrant",
+      "content": "21. (1) If it appears to a Magistrate, upon written information on oath from an authorised officer, that there is reasonable cause to believe that any premises contain evidence of an offence under this Act, the Magistrate may issue a warrant authorising the authorised officer to enter, search and seize."
+    },
+    {
+      "provision_ref": "s22",
+      "chapter": "Part V - Enforcement",
+      "section": "22",
+      "title": "Search without warrant",
+      "content": "22. An authorised officer may exercise the powers of search and seizure without a warrant if — (a) he has reasonable cause to believe that by reason of delay in obtaining a warrant, evidence is likely to be removed or destroyed; or (b) the premises are a free zone or other area where strategic items are customarily stored or handled."
+    },
+    {
+      "provision_ref": "s23",
+      "chapter": "Part V - Enforcement",
+      "section": "23",
+      "title": "Power of arrest",
+      "content": "23. (1) An authorised officer may arrest without warrant any person whom he reasonably believes has committed or is attempting to commit an offence under this Act. (2) The person arrested shall be brought before a Magistrate without unnecessary delay."
+    },
+    {
+      "provision_ref": "s24",
+      "chapter": "Part V - Enforcement",
+      "section": "24",
+      "title": "Forfeiture",
+      "content": "24. (1) All strategic items seized under this Act shall be liable to forfeiture. (2) The court may order forfeiture whether or not the person is convicted."
+    },
+    {
+      "provision_ref": "s25",
+      "chapter": "Part V - Enforcement",
+      "section": "25",
+      "title": "Power to require information",
+      "content": "25. (1) The Controller or an authorised officer may, by written notice, require any person to provide such information or documents as may be specified within such time as may be specified. (2) A person who fails to comply commits an offence."
+    },
+    {
+      "provision_ref": "s26",
+      "chapter": "Part VI - Offences and Penalties",
+      "section": "26",
+      "title": "False declaration",
+      "content": "26. A person who in making any application, declaration, return or in furnishing any information under this Act, makes any statement which he knows or has reason to believe is false commits an offence and shall on conviction be liable to a fine not exceeding three million ringgit or to imprisonment for a term not exceeding five years or to both."
+    },
+    {
+      "provision_ref": "s27",
+      "chapter": "Part VI - Offences and Penalties",
+      "section": "27",
+      "title": "Abetment",
+      "content": "27. Any person who abets the commission of, or attempts to commit, any offence under this Act shall be guilty of that offence and shall be liable on conviction to the penalty provided for that offence."
+    },
+    {
+      "provision_ref": "s28",
+      "chapter": "Part VI - Offences and Penalties",
+      "section": "28",
+      "title": "Offences by body corporate",
+      "content": "28. Where an offence under this Act has been committed by a body corporate, any person who at the time of the commission of the offence was a director, manager, secretary, or other similar officer of the body corporate, or who was purporting to act in any such capacity, shall be deemed to have committed that offence unless he proves that the offence was committed without his consent or connivance and that he exercised all due diligence to prevent the commission of the offence."
+    },
+    {
+      "provision_ref": "s29",
+      "chapter": "Part VI - Offences and Penalties",
+      "section": "29",
+      "title": "General penalty",
+      "content": "29. Any person who commits an offence under this Act for which no penalty is expressly provided shall, on conviction, be liable to a fine not exceeding one million ringgit or to imprisonment for a term not exceeding two years or to both."
+    },
+    {
+      "provision_ref": "s30",
+      "chapter": "Part VI - Offences and Penalties",
+      "section": "30",
+      "title": "Compounding of offences",
+      "content": "30. (1) The Controller may, with the consent of the Public Prosecutor, compound any offence under this Act by making a written offer to the person suspected of having committed the offence to compound the offence upon payment of a sum of money not exceeding fifty per centum of the maximum fine."
+    },
+    {
+      "provision_ref": "s31",
+      "chapter": "Part VII - General",
+      "section": "31",
+      "title": "Internal compliance programme",
+      "content": "31. (1) The Controller may require any person who deals in strategic items to establish and maintain an internal compliance programme. (2) An internal compliance programme shall include — (a) screening procedures for transactions and end-users; (b) record-keeping procedures; (c) training programmes for employees; and (d) auditing and reporting procedures."
+    },
+    {
+      "provision_ref": "s32",
+      "chapter": "Part VII - General",
+      "section": "32",
+      "title": "Technical assistance",
+      "content": "32. (1) No person shall provide technical assistance relating to the development, production, handling, operation, maintenance, storage, detection, identification or dissemination of weapons of mass destruction to any person in a foreign country if the person knows or has reason to believe that such assistance will be used for prohibited purposes."
+    },
+    {
+      "provision_ref": "s33",
+      "chapter": "Part VII - General",
+      "section": "33",
+      "title": "Appeals",
+      "content": "33. (1) Any person aggrieved by a decision of the Controller may, within thirty days from the date of the decision, appeal to the Minister. (2) The decision of the Minister on an appeal shall be final."
+    },
+    {
+      "provision_ref": "s34",
+      "chapter": "Part VII - General",
+      "section": "34",
+      "title": "Protection of officers",
+      "content": "34. No action, suit, prosecution or other proceeding shall lie or be brought against the Controller, any officer appointed under section 4, or any authorised officer, for any act done or statement made in the exercise of any power conferred by this Act, if the act or statement was done or made in good faith."
+    },
+    {
+      "provision_ref": "s35",
+      "chapter": "Part VII - General",
+      "section": "35",
+      "title": "Keeping of records",
+      "content": "35. (1) Every person who exports, tranships, transits or brokers any strategic item shall keep and maintain records of all transactions for a period of not less than six years from the date of the transaction. (2) The records shall include — (a) the description and quantity of the strategic items; (b) the name and address of the consignee and end-user; (c) the country of destination; (d) copies of all permits, end-user certificates and other documents related to the transaction; and (e) the date and method of shipment."
+    },
+    {
+      "provision_ref": "s36",
+      "chapter": "Part VII - General",
+      "section": "36",
+      "title": "Duty to report suspicious transactions",
+      "content": "36. (1) Any person who has knowledge of or reason to suspect that any strategic item or unlisted item may be intended for use in connection with any activity relating to weapons of mass destruction shall report such knowledge or suspicion to the Controller. (2) A person who fails to comply with subsection (1) commits an offence."
+    },
+    {
+      "provision_ref": "s37",
+      "chapter": "Part VII - General",
+      "section": "37",
+      "title": "Cooperation with foreign governments",
+      "content": "37. (1) The Controller may, with the approval of the Minister, cooperate with the governments of foreign countries or with any international organisation in respect of the control of trade in strategic items. (2) Such cooperation may include the exchange of information concerning suspected illicit trafficking in strategic items."
+    },
+    {
+      "provision_ref": "s38",
+      "chapter": "Part VII - General",
+      "section": "38",
+      "title": "Annual report",
+      "content": "38. (1) The Controller shall, not later than 31 March each year, prepare and submit to the Minister an annual report on the administration of this Act during the preceding year. (2) The annual report shall include — (a) the number of permits granted, refused, suspended and revoked; (b) the number of registered brokers; (c) the number of enforcement actions taken; and (d) any other matters the Controller considers appropriate."
+    },
+    {
+      "provision_ref": "s39",
+      "chapter": "Part VII - General",
+      "section": "39",
+      "title": "Confidentiality",
+      "content": "39. (1) Any person who has access to any information obtained under this Act shall not disclose such information except — (a) for the purposes of the administration or enforcement of this Act; (b) for the purposes of any criminal proceeding; or (c) as required by any court. (2) A person who contravenes this section commits an offence."
+    },
+    {
+      "provision_ref": "s40",
+      "chapter": "Part VII - General",
+      "section": "40",
+      "title": "Regulations",
+      "content": "35. (1) The Minister may make regulations as are necessary or expedient for carrying into effect the provisions of this Act. (2) Regulations may be made for — (a) prescribing forms for applications, permits, certificates and other documents; (b) prescribing fees; (c) prescribing records to be maintained; (d) prescribing the manner of disposal of forfeited items; (e) any other matter required or permitted to be prescribed."
     }
   ],
   "definitions": [
     {
       "term": "strategic item",
-      "definition": "\"strategic item\" means any item as set out in the Strategic Trade (Strategic Items) Order",
+      "definition": "Any item as set out in the Strategic Trade (Strategic Items) Order, and includes any unlisted item that is or may be intended for use in connection with any activity relating to weapons of mass destruction.",
       "source_provision": "s2"
     },
     {
       "term": "unlisted item",
-      "definition": "\"unlisted item\" means any item not included in the Strategic Trade (Strategic Items) Order that can be used in whole or in part for or in connection with the development, production, handling, operation, maintenance, storage, detection, identification or dissemination of weapons of mass destruction",
+      "definition": "Any item not included in the Strategic Trade (Strategic Items) Order that can be used in whole or in part for or in connection with the development, production, handling, operation, maintenance, storage, detection, identification or dissemination of weapons of mass destruction or their means of delivery.",
+      "source_provision": "s2"
+    },
+    {
+      "term": "weapon of mass destruction",
+      "definition": "Any weapon designed to cause death or serious bodily injury through the release, dissemination or impact of toxic chemicals or their precursors, any disease organism, radiation or radioactivity.",
+      "source_provision": "s2"
+    },
+    {
+      "term": "brokering",
+      "definition": "Any act by which a person as an intermediary arranges or negotiates a transaction for the purchase, sale or supply of strategic items from one foreign country for transfer to another foreign country.",
+      "source_provision": "s2"
+    },
+    {
+      "term": "export",
+      "definition": "To take or cause to be taken out of Malaysia by any means any strategic item.",
+      "source_provision": "s2"
+    },
+    {
+      "term": "transhipment",
+      "definition": "The removal of strategic items from the conveyance on which they were brought into Malaysia and the placing of such items on the same or another conveyance for the purpose of bringing them out of Malaysia.",
+      "source_provision": "s2"
+    },
+    {
+      "term": "end-user",
+      "definition": "The person who receives and ultimately uses the strategic items.",
+      "source_provision": "s2"
+    },
+    {
+      "term": "restricted end-user",
+      "definition": "Any person or entity listed by the Minister as being involved or likely to be involved in activities related to weapons of mass destruction.",
       "source_provision": "s2"
     }
   ]

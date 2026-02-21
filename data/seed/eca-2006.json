@@ -8,48 +8,181 @@
   "issued_date": "2006-01-01",
   "in_force_date": "2006-10-19",
   "url": "https://www.commonlii.org/my/legis/consol_act/eca2006203/",
-  "description": "Provides legal recognition for electronic messages in commercial transactions. Covers formation of contracts, attribution, acknowledgment, and dispatch/receipt of electronic messages.",
+  "description": "An Act to provide for legal recognition of electronic messages in commercial transactions, the use of electronic messages to fulfill legal requirements and to enable and facilitate commercial transactions through the use of electronic means. The Act establishes that electronic messages shall not be denied legal effect solely on the ground that they are in electronic form.",
   "provisions": [
     {
+      "provision_ref": "s1",
+      "chapter": "Part I - Preliminary",
+      "section": "1",
+      "title": "Short title and commencement",
+      "content": "1. (1) This Act may be cited as the Electronic Commerce Act 2006. (2) This Act comes into operation on a date to be appointed by the Minister by notification in the Gazette, and the Minister may appoint different dates for the coming into operation of different provisions of this Act."
+    },
+    {
+      "provision_ref": "s2",
+      "chapter": "Part I - Preliminary",
+      "section": "2",
+      "title": "Application",
+      "content": "2. (1) This Act shall apply to any commercial transaction conducted through electronic means including commercial transactions by the Federal and State Governments. (2) This Act shall not apply to — (a) power of attorney; (b) the creation of wills and codicils; (c) the creation of trusts; (d) negotiable instruments."
+    },
+    {
+      "provision_ref": "s3",
+      "chapter": "Part I - Preliminary",
+      "section": "3",
+      "title": "Prevailing law",
+      "content": "3. The provisions of this Act shall be in addition to, and not in derogation of, any law regulating commercial transactions."
+    },
+    {
+      "provision_ref": "s4",
+      "chapter": "Part I - Preliminary",
+      "section": "4",
+      "title": "Interpretation",
+      "content": "4. In this Act, unless the context otherwise requires — 'addressee' in relation to an electronic message, means a person who is intended by the originator to receive the electronic message but does not include a person acting as intermediary with respect to that electronic message; 'commercial transaction' means a single communication or multiple communications of a commercial nature, whether contractual or not, which includes any matters relating to the supply or exchange of goods or services, agency, investments, financing, banking and insurance; 'electronic' means the technology of utilizing electrical, optical, magnetic, electromagnetic, biometric, photonic or other similar technology; 'electronic message' means information generated, sent, received or stored by electronic means; 'information' includes data, text, images, sounds, codes, computer programs, software and databases; 'information system' means a system for generating, sending, receiving, storing or otherwise processing electronic messages; 'intermediary' means a person who, on behalf of another person, sends, receives, or stores an electronic message or provides other services with respect to that electronic message; 'originator' in relation to an electronic message, means a person by whom, or on whose behalf, the electronic message purports to have been sent or generated prior to storage, if any, but does not include a person acting as intermediary with respect to that electronic message."
+    },
+    {
       "provision_ref": "s5",
+      "chapter": "Part II - Legal Recognition of Electronic Messages",
       "section": "5",
       "title": "Legal recognition of electronic message",
-      "content": "An electronic message shall not be denied legal effect, validity or enforceability on the ground that it is wholly or partly in an electronic form."
+      "content": "5. An electronic message shall not be denied legal effect, validity or enforceability on the ground that it is wholly or partly in an electronic form."
     },
     {
       "provision_ref": "s6",
+      "chapter": "Part II - Legal Recognition of Electronic Messages",
       "section": "6",
-      "title": "Formation and validity of contracts",
-      "content": "In the formation of a contract, the communication of proposals, acceptance of proposals, and revocation of proposals and acceptances or any related communication may be expressed by an electronic message. A contract shall not be denied legal effect, validity or enforceability on the ground that an electronic message is used in its formation."
+      "title": "Matters to be considered in determining the legal effect",
+      "content": "6. In determining the legal effect, validity or enforceability of an electronic message, regard shall be had to its reliability, integrity, and any other relevant consideration."
     },
     {
       "provision_ref": "s7",
+      "chapter": "Part III - Fulfillment of Legal Requirements by Electronic Means",
       "section": "7",
-      "title": "Recognition by parties of electronic message",
-      "content": "Nothing in this Act shall require a person to use, provide or accept an electronic message in any commercial transaction unless the person consents to using, providing or accepting the electronic message."
+      "title": "Fulfillment of writing requirements",
+      "content": "7. Where any law requires information to be in writing, the requirement of the law is fulfilled if the information is in an electronic form that is — (a) accessible so as to be usable for subsequent reference; and (b) where the consent of the person against whom the electronic message is to be used is required, the person has consented to the information being in an electronic form."
     },
     {
       "provision_ref": "s8",
+      "chapter": "Part III - Fulfillment of Legal Requirements by Electronic Means",
       "section": "8",
-      "title": "Fulfilment of requirement for writing",
-      "content": "Where any law requires information to be in writing, the requirement of the law is fulfilled if the information is contained in an electronic message that is accessible and intelligible so as to be usable for subsequent reference."
+      "title": "Fulfillment of signature requirements",
+      "content": "8. (1) Where any law requires a signature of a person on a document, the requirement of the law is fulfilled, if the document is in the form of an electronic message, by an electronic signature which — (a) is attached to or is logically associated with the electronic message; (b) adequately identifies the person and adequately indicates the person's approval of the information to which the signature relates; and (c) is as reliable as is appropriate given the purpose for which, and the circumstances in which, the signature is required. (2) For the purposes of paragraph (1)(c), an electronic signature is as reliable as is appropriate if — (a) the means of creating the electronic signature is linked to and under the control of that person only; (b) any alteration made to the electronic signature after the time of signing is detectable; and (c) any alteration made to the document after the time of signing is detectable."
     },
     {
       "provision_ref": "s9",
+      "chapter": "Part III - Fulfillment of Legal Requirements by Electronic Means",
       "section": "9",
-      "title": "Fulfilment of signature requirement",
-      "content": "Where any law requires a signature of a person on a document, the requirement of the law is fulfilled, if the document is in the form of an electronic message, by an electronic signature which — (a) is attached to or is logically associated with the electronic message; (b) adequately identifies the person and adequately indicates the person's approval of the information to which the signature relates; and (c) is as reliable as is appropriate given the purpose for which, and the circumstances in which, the signature is required."
+      "title": "Fulfillment of requirements relating to witnesses",
+      "content": "9. Where any law requires the signature of a witness on a document, the requirement of the law is fulfilled, if the document is in the form of an electronic message, by an electronic signature of the witness that complies with section 8."
+    },
+    {
+      "provision_ref": "s10",
+      "chapter": "Part III - Fulfillment of Legal Requirements by Electronic Means",
+      "section": "10",
+      "title": "Fulfillment of requirements to retain document or information",
+      "content": "10. Where any law requires any document or information to be retained, the requirement of the law is fulfilled by retaining the document or information in an electronic form if — (a) the electronic message is retained in the format in which it was generated, sent or received, or in a format which can be demonstrated to represent accurately the information generated, sent or received; (b) the information, if any, that identifies the origin and destination of the electronic message and the date and time when the electronic message was sent or received, is retained; and (c) the electronic message is accessible so as to be usable for subsequent reference."
+    },
+    {
+      "provision_ref": "s11",
+      "chapter": "Part III - Fulfillment of Legal Requirements by Electronic Means",
+      "section": "11",
+      "title": "Fulfillment of requirements to provide document or information",
+      "content": "11. Where any law requires any document or information to be provided, sent, delivered, forwarded, presented, submitted or given to any person, the requirement of the law is fulfilled by providing, sending, delivering, forwarding, presenting, submitting or giving the document or information in an electronic form."
+    },
+    {
+      "provision_ref": "s12",
+      "chapter": "Part IV - Communication of Electronic Messages",
+      "section": "12",
+      "title": "Attribution of electronic messages",
+      "content": "12. (1) An electronic message is that of the originator if it was sent by the originator himself. (2) As between the originator and the addressee, an electronic message is deemed to be that of the originator if it was sent — (a) by a person who had the authority to act on behalf of the originator in respect of that electronic message; or (b) by an information system programmed by, or on behalf of, the originator to operate automatically."
+    },
+    {
+      "provision_ref": "s13",
+      "chapter": "Part IV - Communication of Electronic Messages",
+      "section": "13",
+      "title": "Acknowledgement of receipt",
+      "content": "13. (1) Where the originator has not agreed with the addressee that the acknowledgement be given in a particular form or by a particular method, an acknowledgement may be given by — (a) any communication by the addressee, whether automated or otherwise; or (b) any conduct of the addressee, sufficient to indicate to the originator that the electronic message has been received. (2) Where the originator has stated that the electronic message is conditional on receipt of the acknowledgement, the electronic message is treated as though it has never been sent, until the acknowledgement is received. (3) Where the originator has not stated that the electronic message is conditional on receipt of the acknowledgement, and the acknowledgement has not been received by the originator within the time specified or agreed, or if no time has been specified or agreed, within a reasonable time, the originator may give notice to the addressee stating that no acknowledgement has been received and specifying a reasonable time by which the acknowledgement is to be received."
+    },
+    {
+      "provision_ref": "s14",
+      "chapter": "Part IV - Communication of Electronic Messages",
+      "section": "14",
+      "title": "Time of dispatch",
+      "content": "14. Unless otherwise agreed between the originator and the addressee, the dispatch of an electronic message occurs when it enters an information system outside the control of the originator or, if the originator and the addressee are within the same information system, when the electronic message is capable of being retrieved by the addressee."
+    },
+    {
+      "provision_ref": "s15",
+      "chapter": "Part IV - Communication of Electronic Messages",
+      "section": "15",
+      "title": "Time of receipt",
+      "content": "15. Unless otherwise agreed between the originator and the addressee, the time of receipt of an electronic message is determined as follows — (a) if the addressee has designated an information system for the purpose of receiving the electronic message, receipt occurs at the time when the electronic message enters the designated information system; or (b) if the electronic message is sent to an information system of the addressee that is not the designated information system, receipt occurs at the time when the electronic message comes to the knowledge of the addressee."
+    },
+    {
+      "provision_ref": "s16",
+      "chapter": "Part IV - Communication of Electronic Messages",
+      "section": "16",
+      "title": "Place of dispatch and receipt",
+      "content": "16. Unless otherwise agreed between the originator and the addressee — (a) an electronic message is deemed to be dispatched at the place where the originator has its place of business and is deemed to be received at the place where the addressee has its place of business; (b) if the originator or the addressee has more than one place of business, the place of business is that which has the closest relationship to the underlying transaction or, where there is no underlying transaction, the principal place of business; (c) if the originator or the addressee does not have a place of business, reference is to be made to the usual place of residence."
+    },
+    {
+      "provision_ref": "s17",
+      "chapter": "Part V - Electronic Contracts",
+      "section": "17",
+      "title": "Formation and validity of contracts",
+      "content": "17. (1) In the formation of a contract, the communication of proposals, acceptance of proposals, and revocation of proposals and acceptances or any related communication may be expressed by an electronic message. (2) A contract shall not be denied legal effect, validity or enforceability on the ground that an electronic message is used in its formation."
+    },
+    {
+      "provision_ref": "s18",
+      "chapter": "Part V - Electronic Contracts",
+      "section": "18",
+      "title": "Invitation to treat",
+      "content": "18. (1) A proposal to enter into a contract made through one or more electronic messages which is not addressed to one or more specific parties but is generally accessible to parties making use of information systems, including a proposal that makes use of interactive applications for the placement of orders through an information system, is to be considered as an invitation to treat unless it clearly indicates the intention of the party making the proposal to be bound in case of acceptance. (2) Nothing in this Act shall affect any law which requires the display of goods with an indication of their prices to constitute a proposal."
+    },
+    {
+      "provision_ref": "s19",
+      "chapter": "Part VI - Miscellaneous",
+      "section": "19",
+      "title": "Regulations",
+      "content": "19. The Minister may make regulations as are necessary or expedient for giving full effect to or for carrying out the provisions of this Act."
     }
   ],
   "definitions": [
     {
+      "term": "electronic",
+      "definition": "The technology of utilizing electrical, optical, magnetic, electromagnetic, biometric, photonic or other similar technology.",
+      "source_provision": "s4"
+    },
+    {
       "term": "electronic message",
-      "definition": "\"electronic message\" means information generated, sent, received or stored by electronic means for use in a commercial transaction",
+      "definition": "Information generated, sent, received or stored by electronic means.",
+      "source_provision": "s4"
+    },
+    {
+      "term": "commercial transaction",
+      "definition": "A single communication or multiple communications of a commercial nature, whether contractual or not, which includes any matters relating to the supply or exchange of goods or services, agency, investments, financing, banking and insurance.",
+      "source_provision": "s4"
+    },
+    {
+      "term": "originator",
+      "definition": "A person by whom, or on whose behalf, the electronic message purports to have been sent or generated prior to storage, if any, but does not include a person acting as intermediary.",
+      "source_provision": "s4"
+    },
+    {
+      "term": "addressee",
+      "definition": "A person who is intended by the originator to receive the electronic message but does not include a person acting as intermediary with respect to that electronic message.",
+      "source_provision": "s4"
+    },
+    {
+      "term": "information system",
+      "definition": "A system for generating, sending, receiving, storing or otherwise processing electronic messages.",
+      "source_provision": "s4"
+    },
+    {
+      "term": "intermediary",
+      "definition": "A person who, on behalf of another person, sends, receives, or stores an electronic message or provides other services with respect to that electronic message.",
       "source_provision": "s4"
     },
     {
       "term": "electronic signature",
-      "definition": "\"electronic signature\" means any letter, character, number, sound or any other symbol or any combination thereof created in an electronic form adopted by a person as a signature",
+      "definition": "Any letter, character, number, sound or any other symbol or any combination thereof created in an electronic form adopted by a person as a signature.",
       "source_provision": "s4"
     }
   ]

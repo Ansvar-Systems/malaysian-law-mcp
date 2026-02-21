@@ -8,49 +8,249 @@
   "issued_date": "1999-11-15",
   "in_force_date": "1999-11-15",
   "url": "https://www.commonlii.org/my/legis/consol_act/cpa1999304/",
-  "description": "Protects consumers against unfair practices, misleading conduct, unsafe goods and services. Part IIIA covers e-commerce consumer protection including online marketplace obligations.",
+  "description": "An Act to provide for the protection of consumers, the establishment of the National Consumer Advisory Council, and for matters connected therewith. Covers unfair trade practices, misleading and deceptive conduct, unsafe goods and services, and e-commerce consumer protection under Part IIIA.",
   "provisions": [
     {
+      "provision_ref": "s1",
+      "chapter": "Part I - Preliminary",
+      "section": "1",
+      "title": "Short title and commencement",
+      "content": "1. (1) This Act may be cited as the Consumer Protection Act 1999. (2) This Act comes into operation on a date to be appointed by the Minister by notification in the Gazette."
+    },
+    {
+      "provision_ref": "s2",
+      "chapter": "Part I - Preliminary",
+      "section": "2",
+      "title": "Interpretation",
+      "content": "2. In this Act, unless the context otherwise requires — 'consumer' means a person who — (a) acquires or uses goods or services of a kind ordinarily acquired for personal, domestic or household purpose, use or consumption; and (b) does not acquire or use the goods or services, or hold himself out as acquiring or using the goods or services, primarily for the purpose of — (i) resupplying them in trade; (ii) consuming them in the course of a manufacturing process; or (iii) in the case of goods, repairing or treating, in trade, other goods or fixtures on land; 'goods' means goods which are primarily purchased, used or consumed for personal, domestic or household purposes, and includes — (a) goods attached to, or incorporated in, any real or personal property; (b) animals, including fish; (c) vessels and vehicles; (d) utilities; and (e) trees, plants and crops whether on, under or attached to land or not; 'services' includes any rights, benefits, privileges or facilities that are or are to be provided, granted or conferred under any contract, but does not include rights, benefits or privileges in the form of the supply of goods or the performance of work under a contract of service; 'supplier' means a person who, in trade, supplies goods or services to a consumer; 'trade' means any trade, business, industry, profession, occupation, activity of commerce or undertaking relating to the supply or acquisition of goods or services."
+    },
+    {
       "provision_ref": "s3",
+      "chapter": "Part I - Preliminary",
       "section": "3",
       "title": "Application",
-      "content": "This Act shall apply in respect of all goods and services that are offered or supplied to one or more consumers in trade including any trade transaction conducted through electronic means. For the avoidance of doubt, this Act shall not apply to — (a) securities as defined in the Securities Industry Act 1983; or (b) futures contracts as defined in the Futures Industry Act 1993; or (c) any contract of insurance including a contract of takaful; or (d) land or any interest in land; or (e) services provided by a registered person as defined in the Legal Profession Act 1976; or (f) healthcare services provided by a healthcare professional or healthcare facility."
+      "content": "3. (1) This Act shall apply in respect of all goods and services that are offered or supplied to one or more consumers in trade including any trade transaction conducted through electronic means. (2) For the avoidance of doubt, this Act shall not apply to — (a) securities as defined in the Securities Industry Act 1983; or (b) futures contracts as defined in the Futures Industry Act 1993; or (c) any contract of insurance including a contract of takaful; or (d) land or any interest in land; or (e) services provided by a registered person as defined in the Legal Profession Act 1976; or (f) healthcare services provided by a healthcare professional or healthcare facility."
+    },
+    {
+      "provision_ref": "s4",
+      "chapter": "Part I - Preliminary",
+      "section": "4",
+      "title": "No contracting out",
+      "content": "4. (1) The provisions of this Act shall have effect notwithstanding any contract or agreement to the contrary. (2) Any term of a contract or agreement which purports to exclude, restrict or modify, or has the effect of excluding, restricting or modifying the application of all or any of the provisions of this Act shall be void."
     },
     {
       "provision_ref": "s8",
+      "chapter": "Part II - Misleading and Deceptive Conduct, False Representation and Unfair Practice",
       "section": "8",
+      "title": "Misleading conduct",
+      "content": "8. No person shall, in trade, engage in conduct that is misleading or deceptive or is likely to mislead or deceive any person."
+    },
+    {
+      "provision_ref": "s9",
+      "chapter": "Part II - Misleading and Deceptive Conduct, False Representation and Unfair Practice",
+      "section": "9",
       "title": "False or misleading representation",
-      "content": "No person shall, in trade, engage in conduct that is misleading or deceptive or is likely to mislead or deceive any person. Without limiting the generality of subsection (1), the conduct referred to in subsection (1) includes any representation, whether expressed or implied, that — (a) goods are of a particular kind, standard, quality, grade, quantity, composition, style or model; (b) goods have had a particular history or particular previous use; (c) services are of a particular kind, standard, quality or quantity; (d) services are supplied by any particular person or by any person of a particular trade, qualification or skill."
+      "content": "9. (1) No person shall, in trade, make a false or misleading representation — (a) that goods are of a particular kind, standard, quality, grade, quantity, composition, style or model; (b) that goods have had a particular history or particular previous use; (c) that services are of a particular kind, standard, quality or quantity; (d) that services are supplied by any particular person or by any person of a particular trade, qualification or skill; (e) that a particular person has agreed to acquire the goods or services; (f) with respect to the price of goods or services; (g) concerning the need for any goods, services, replacements or repairs; (h) concerning the existence, exclusion or effect of any condition, warranty, guarantee, right or remedy; or (i) concerning the place of origin of goods."
+    },
+    {
+      "provision_ref": "s10",
+      "chapter": "Part II - Misleading and Deceptive Conduct, False Representation and Unfair Practice",
+      "section": "10",
+      "title": "Conduct in relation to land",
+      "content": "10. No person shall, in trade in connection with the sale or grant or possible sale or grant of an interest in land, or in connection with the promotion by any means of the sale or grant of an interest in land, engage in conduct that is misleading or deceptive."
+    },
+    {
+      "provision_ref": "s11",
+      "chapter": "Part II - Misleading and Deceptive Conduct, False Representation and Unfair Practice",
+      "section": "11",
+      "title": "Misleading indication as to price",
+      "content": "11. (1) No person shall, in trade, give to a consumer an indication which is misleading as to the price at which any goods or services are available. (2) An indication as to price is misleading if — (a) it gives the consumer a false impression of the value of the goods or services; or (b) it indicates that the price is less than the price at which the goods or services are in fact available."
+    },
+    {
+      "provision_ref": "s12",
+      "chapter": "Part II - Misleading and Deceptive Conduct, False Representation and Unfair Practice",
+      "section": "12",
+      "title": "Bait advertising",
+      "content": "12. No person shall, in trade, advertise for supply at a specified price goods or services which he does not intend to offer for supply, or does not have reasonable grounds for believing that he will be able to offer for supply, at that price for a period that is, and in quantities that are, reasonable having regard to the nature of the market and the nature of the advertisement."
+    },
+    {
+      "provision_ref": "s13",
+      "chapter": "Part II - Misleading and Deceptive Conduct, False Representation and Unfair Practice",
+      "section": "13",
+      "title": "Demanding or accepting payment without intending to supply as ordered",
+      "content": "13. No person shall, in trade, accept payment or other consideration for goods or services where, at the time of the acceptance — (a) he intends not to supply the goods or services; or (b) he intends to supply goods or services materially different from the goods or services in respect of which the payment or other consideration is accepted."
+    },
+    {
+      "provision_ref": "s14",
+      "chapter": "Part II - Misleading and Deceptive Conduct, False Representation and Unfair Practice",
+      "section": "14",
+      "title": "Unfair claims",
+      "content": "14. No person shall, in trade, make an unfair claim in connection with the supply or possible supply of goods or services."
+    },
+    {
+      "provision_ref": "s15",
+      "chapter": "Part II - Misleading and Deceptive Conduct, False Representation and Unfair Practice",
+      "section": "15",
+      "title": "Unconscionable conduct in relation to supply of goods or services",
+      "content": "15. (1) A person shall not, in trade, engage in conduct that is, in all the circumstances, unconscionable. (2) In determining whether any conduct is unconscionable, regard shall be had to — (a) the relative strengths of the bargaining positions of the supplier and the consumer; (b) whether as a result of conduct engaged in by the supplier, the consumer was required to comply with conditions that were not reasonably necessary for the protection of the legitimate interests of the supplier; (c) whether the consumer was able to understand any documents relating to the supply; (d) whether any undue influence or pressure was exerted on the consumer; and (e) the amount for which, and the circumstances under which, the consumer could have acquired identical or equivalent goods or services from another supplier."
+    },
+    {
+      "provision_ref": "s16",
+      "chapter": "Part II - Misleading and Deceptive Conduct, False Representation and Unfair Practice",
+      "section": "16",
+      "title": "False claims",
+      "content": "16. No person shall, in trade, make a false claim — (a) that he has any sponsorship, approval, endorsement, affiliation or connection that he does not have; or (b) with respect to the characteristics, suitability for a given purpose, or quantity of any goods."
+    },
+    {
+      "provision_ref": "s17",
+      "chapter": "Part II - Misleading and Deceptive Conduct, False Representation and Unfair Practice",
+      "section": "17",
+      "title": "Pyramid selling",
+      "content": "17. No person shall promote or participate in a pyramid selling scheme."
+    },
+    {
+      "provision_ref": "s18",
+      "chapter": "Part II - Misleading and Deceptive Conduct, False Representation and Unfair Practice",
+      "section": "18",
+      "title": "Unsolicited goods and services",
+      "content": "18. (1) Where unsolicited goods are sent to a consumer, the consumer may, as between himself and the sender, use, deal with, or dispose of those goods as if they were an unconditional gift to him. (2) A person shall not, in trade — (a) send to any consumer any invoice or other document stating the amount of any payment for unsolicited goods or services; or (b) make any demand for payment for unsolicited goods or services."
+    },
+    {
+      "provision_ref": "s24",
+      "chapter": "Part III - Safety of Goods and Services",
+      "section": "24",
+      "title": "Safety standards for goods",
+      "content": "24. (1) The Minister may, on the recommendation of the Council, make regulations — (a) prescribing safety standards for goods; (b) prescribing product safety requirements; and (c) prohibiting the supply of goods which do not comply with the prescribed safety standards. (2) A person who supplies goods which do not comply with the safety standards commits an offence."
+    },
+    {
+      "provision_ref": "s25",
+      "chapter": "Part III - Safety of Goods and Services",
+      "section": "25",
+      "title": "Product liability",
+      "content": "25. (1) Where any damage is caused wholly or partly by a defect in a product, the following persons shall be liable for the damage — (a) the producer of the product; (b) any person who, by putting his name on the product or using a trade mark or other distinguishing mark in relation to the product, has held himself out to be the producer of the product; (c) any person who has imported the product into Malaysia in order, in the course of any business, to supply it to another. (2) For the purposes of this section, 'damage' means death or personal injury or any loss of or damage to any property."
+    },
+    {
+      "provision_ref": "s41",
+      "chapter": "Part III - Safety of Goods and Services",
+      "section": "41",
+      "title": "Implied guarantees as to quality",
+      "content": "41. (1) Where goods are supplied to a consumer, there is an implied guarantee that the goods are of acceptable quality. (2) Goods are of acceptable quality if they are as — (a) fit for all the purposes for which goods of the type in question are commonly supplied; (b) acceptable in appearance and finish; (c) free from minor defects; (d) safe; and (e) durable, as a reasonable consumer fully acquainted with the state and condition of the goods would regard as acceptable having regard to — (i) the nature of the goods; (ii) the price; and (iii) any statements made about the goods on any packaging or label."
     },
     {
       "provision_ref": "s46A",
+      "chapter": "Part IIIA - Electronic Commerce Transactions",
       "section": "46A",
-      "title": "E-commerce transactions",
-      "content": "This Part applies to any trade transaction conducted through electronic means, including but not limited to a transaction conducted through an online marketplace. For the purposes of this Part — \"online marketplace\" means an electronic platform that allows consumers to enter into trade transactions with suppliers."
+      "title": "Application of Part IIIA",
+      "content": "46A. (1) This Part applies to any trade transaction conducted through electronic means, including but not limited to a transaction conducted through an online marketplace. (2) For the purposes of this Part — 'online marketplace' means an electronic platform that allows consumers to enter into trade transactions with suppliers; 'operator' in relation to an online marketplace means a person who operates, establishes or maintains an online marketplace."
     },
     {
       "provision_ref": "s46B",
+      "chapter": "Part IIIA - Electronic Commerce Transactions",
       "section": "46B",
       "title": "Duties of operator of online marketplace",
-      "content": "An operator of an online marketplace shall — (a) provide accurate and clear information about the goods or services listed on the online marketplace; (b) ensure that the identity and contact details of the supplier are made available to the consumer; (c) ensure that the online marketplace platform has an accessible and effective mechanism for the consumer to lodge complaints; (d) take reasonable steps to ensure the security of the consumer's personal and financial information."
+      "content": "46B. (1) An operator of an online marketplace shall — (a) provide accurate and clear information about the goods or services listed on the online marketplace; (b) ensure that the identity and contact details of the supplier are made available to the consumer; (c) ensure that the online marketplace has an accessible and effective mechanism for the consumer to lodge complaints; (d) take reasonable steps to ensure the security of the consumer's personal and financial information; (e) ensure that the terms and conditions of the online marketplace are clearly stated and accessible to the consumer before any transaction is concluded."
     },
     {
       "provision_ref": "s46C",
+      "chapter": "Part IIIA - Electronic Commerce Transactions",
       "section": "46C",
       "title": "Right of withdrawal for e-commerce",
-      "content": "A consumer who enters into a trade transaction through electronic means shall have the right to withdraw from the transaction within a period to be prescribed by the Minister. The right of withdrawal shall not apply to — (a) goods that have been consumed or used; (b) digital content that has been downloaded or streamed; (c) goods that are made to the consumer's specifications."
+      "content": "46C. (1) A consumer who enters into a trade transaction through electronic means shall have the right to withdraw from the transaction within a period to be prescribed by the Minister. (2) The right of withdrawal under this section shall be exercised by the consumer giving notice in writing or by electronic means to the supplier. (3) The right of withdrawal shall not apply to — (a) goods that have been consumed or used; (b) digital content that has been downloaded or streamed; (c) goods that are made to the consumer's specifications; (d) goods that are perishable by nature."
+    },
+    {
+      "provision_ref": "s46D",
+      "chapter": "Part IIIA - Electronic Commerce Transactions",
+      "section": "46D",
+      "title": "Disclosure requirements for e-commerce",
+      "content": "46D. (1) A supplier who offers goods or services through electronic means shall disclose the following information clearly and prominently — (a) the name and address of the supplier; (b) a description of the goods or services; (c) the total price of the goods or services, including all taxes and delivery charges; (d) the terms and conditions of the transaction, including cancellation and return policies; (e) the method and expected time of delivery; and (f) payment options available."
+    },
+    {
+      "provision_ref": "s46E",
+      "chapter": "Part IIIA - Electronic Commerce Transactions",
+      "section": "46E",
+      "title": "Confirmation of e-commerce transaction",
+      "content": "46E. (1) A supplier who enters into a trade transaction with a consumer through electronic means shall send the consumer a confirmation of the transaction within a reasonable time. (2) The confirmation shall contain — (a) the date of the transaction; (b) a description and quantity of the goods or services; (c) the price and payment details; and (d) the expected delivery date."
+    },
+    {
+      "provision_ref": "s46F",
+      "chapter": "Part IIIA - Electronic Commerce Transactions",
+      "section": "46F",
+      "title": "Protection of consumer data in e-commerce",
+      "content": "46F. (1) A supplier or operator of an online marketplace shall take reasonable steps to protect the personal data and financial information of consumers collected in the course of electronic transactions. (2) A supplier or operator shall not use consumer data collected in the course of electronic transactions for any purpose other than the purpose for which it was collected, without the consumer's prior consent."
+    },
+    {
+      "provision_ref": "s46G",
+      "chapter": "Part IIIA - Electronic Commerce Transactions",
+      "section": "46G",
+      "title": "Liability of online marketplace operators",
+      "content": "46G. (1) The operator of an online marketplace shall be liable for losses suffered by a consumer arising from — (a) the operator's failure to comply with any duty imposed under this Part; or (b) any misleading or false information provided by the operator about a supplier or about the goods or services listed on the online marketplace."
+    },
+    {
+      "provision_ref": "s46H",
+      "chapter": "Part IIIA - Electronic Commerce Transactions",
+      "section": "46H",
+      "title": "Record keeping for e-commerce",
+      "content": "46H. (1) A supplier or operator of an online marketplace shall keep records of all transactions for a period of not less than five years. (2) The records shall include — (a) the identity of the consumer; (b) a description of the goods or services; (c) the price and payment details; and (d) the date of the transaction."
+    },
+    {
+      "provision_ref": "s46I",
+      "chapter": "Part IIIA - Electronic Commerce Transactions",
+      "section": "46I",
+      "title": "Cross-border e-commerce",
+      "content": "46I. This Part shall apply to cross-border electronic commerce transactions where the consumer is in Malaysia, regardless of the location of the supplier or operator of the online marketplace."
+    },
+    {
+      "provision_ref": "s46J",
+      "chapter": "Part IIIA - Electronic Commerce Transactions",
+      "section": "46J",
+      "title": "Reviews and ratings",
+      "content": "46J. (1) An operator of an online marketplace that provides a system for consumer reviews or ratings shall — (a) take reasonable steps to ensure that reviews and ratings are genuine and not misleading; (b) not delete or suppress negative reviews without a legitimate basis; (c) disclose any process used to verify the authenticity of reviews."
+    },
+    {
+      "provision_ref": "s46K",
+      "chapter": "Part IIIA - Electronic Commerce Transactions",
+      "section": "46K",
+      "title": "Dispute resolution for e-commerce",
+      "content": "46K. (1) A supplier or operator of an online marketplace shall provide consumers with access to an effective and accessible dispute resolution mechanism. (2) The dispute resolution mechanism may include — (a) a complaints handling procedure; (b) mediation; or (c) online dispute resolution."
+    },
+    {
+      "provision_ref": "s46L",
+      "chapter": "Part IIIA - Electronic Commerce Transactions",
+      "section": "46L",
+      "title": "Penalties under Part IIIA",
+      "content": "46L. A person who contravenes any provision of this Part commits an offence and shall, on conviction, be liable to a fine not exceeding one hundred thousand ringgit or to imprisonment for a term not exceeding three years or to both."
     }
   ],
   "definitions": [
     {
       "term": "consumer",
-      "definition": "\"consumer\" means a person who acquires or uses goods or services of a kind ordinarily acquired for personal, domestic or household purpose, use or consumption",
-      "source_provision": "s3"
+      "definition": "A person who acquires or uses goods or services of a kind ordinarily acquired for personal, domestic or household purpose, use or consumption, and does not acquire or use the goods or services primarily for the purpose of resupplying them in trade or consuming them in a manufacturing process.",
+      "source_provision": "s2"
+    },
+    {
+      "term": "goods",
+      "definition": "Goods which are primarily purchased, used or consumed for personal, domestic or household purposes, and includes goods attached to or incorporated in any real or personal property, animals, vessels and vehicles, utilities, and trees, plants and crops.",
+      "source_provision": "s2"
+    },
+    {
+      "term": "services",
+      "definition": "Any rights, benefits, privileges or facilities that are or are to be provided, granted or conferred under any contract, but does not include rights, benefits or privileges in the form of the supply of goods or the performance of work under a contract of service.",
+      "source_provision": "s2"
+    },
+    {
+      "term": "supplier",
+      "definition": "A person who, in trade, supplies goods or services to a consumer.",
+      "source_provision": "s2"
     },
     {
       "term": "online marketplace",
-      "definition": "\"online marketplace\" means an electronic platform that allows consumers to enter into trade transactions with suppliers",
+      "definition": "An electronic platform that allows consumers to enter into trade transactions with suppliers.",
       "source_provision": "s46A"
+    },
+    {
+      "term": "trade",
+      "definition": "Any trade, business, industry, profession, occupation, activity of commerce or undertaking relating to the supply or acquisition of goods or services.",
+      "source_provision": "s2"
     }
   ]
 }
