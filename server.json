@@ -1,20 +1,22 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "eu.ansvar/malaysian-law-mcp",
-  "description": "Malaysian law database covering PDPA 2010, Computer Crimes Act, Communications and Multimedia Act, Companies Act, and Electronic Commerce Act with full-text search",
+  "description": "Malaysian legislation via MCP — full-text search across statutes and provisions",
   "repository": {
     "url": "https://github.com/Ansvar-Systems/malaysian-law-mcp",
     "source": "github"
   },
   "homepage": "https://ansvar.eu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "Apache-2.0",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "@ansvar/malaysian-law-mcp",
       "version": "1.0.0",
-      "transport": { "type": "stdio" }
+      "transport": {
+        "type": "stdio"
+      }
     }
   ]
 }
