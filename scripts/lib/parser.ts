@@ -2,31 +2,29 @@
  * HTML parser for Malaysian legislation from CommonLII (commonlii.org/my/legis/).
  *
  * CommonLII serves consolidated Malaysian statutes as plain HTML pages with
- * a predictable structure. The legislation text uses standard HTML elements
- * (headings, paragraphs, lists) rather than semantic classes.
+ * a flat structure. The legislation text uses minimal HTML elements — mostly
+ * <p> tags and raw text. No semantic CSS classes.
  *
  * Malaysian statutes follow the common law tradition with "Section" numbering
- * (s1, s2, ...). The Federal Constitution uses "Article" numbering but we
- * normalise to provision_ref format: "s1", "s2", "art1", "art2".
+ * (s1, s2, ...). The Federal Constitution uses "Article" numbering.
  *
- * HTML structure on CommonLII:
- *   <h2> or <h3>: Part/Chapter headings
- *   <p> or <blockquote>: Section text
- *   Bold text with "Section N" or "N." pattern: section boundaries
- *   Indented text: subsections and paragraphs
+ * CommonLII HTML structure:
+ *   - First half: "ARRANGEMENT OF SECTIONS" (table of contents)
+ *   - Second half: actual provision text (after "BE IT ENACTED..." or similar)
+ *   - Section boundaries: <p>N. (1) ... or <p>N. Title text...
+ *   - Part/Chapter headings: PART I, PART II, Chapter 1, etc.
+ *   - Page number artifacts: "7Abattoirs (Privatization)" at page breaks
  */
 
 export interface ActIndexEntry {
   id: string;
+  slug: string;
   title: string;
-  titleEn: string;
-  shortName: string;
+  titleClean: string;
   actNumber: string;
+  year: string;
   status: 'in_force' | 'amended' | 'repealed' | 'not_yet_in_force';
-  issuedDate: string;
-  inForceDate: string;
   url: string;
-  description?: string;
   /** Whether this act uses "Article" instead of "Section" (e.g. Federal Constitution) */
   usesArticles?: boolean;
 }
@@ -87,15 +85,67 @@ function stripHtml(html: string): string {
 }
 
 /**
+ * Remove CommonLII page-break artifacts.
+ * These appear as: "7Abattoirs (Privatization)" or "12 Laws of Malaysia ACT 507"
+ */
+function removePageBreaks(text: string): string {
+  return text
+    .replace(/\n?\d+\s*(?:Laws of Malaysia|LAWS OF MALAYSIA)\s+(?:ACT|Act)\s+\d+/g, '')
+    .replace(/\n?\d+[A-Z][a-z].*?(?:Act|Ordinance|Code|Constitution)/g, (match) => {
+      // Only remove if it looks like a page break (starts with digits followed by title text)
+      if (/^\n?\d+[A-Z]/.test(match)) return '';
+      return match;
+    })
+    .trim();
+}
+
+/**
+ * Find the start of actual provision text (after the "Arrangement of Sections"
+ * table of contents). CommonLII pages typically have:
+ *   1. Front matter (title, reprint info)
+ *   2. Arrangement of Sections (table of contents)
+ *   3. Enactment clause ("BE IT ENACTED...")
+ *   4. Actual provision text
+ *
+ * We want to start parsing from #3 or #4.
+ */
+function findProvisionStart(html: string): number {
+  // Look for the enactment clause
+  const enactPatterns = [
+    /BE IT ENACTED/i,
+    /IT IS HEREBY ENACTED/i,
+    /the same,\s*as follows/i,
+    /in Parliament assembled/i,
+  ];
+
+  for (const pattern of enactPatterns) {
+    const match = html.match(pattern);
+    if (match && match.index !== undefined) {
+      // Find the next <p> after the enactment clause
+      const afterEnact = html.indexOf('<p>', match.index + match[0].length);
+      if (afterEnact !== -1) return afterEnact;
+      return match.index + match[0].length;
+    }
+  }
+
+  // Fallback: look for the second occurrence of PART I (first is in arrangement, second in text)
+  const parts = [...html.matchAll(/PART\s+I\b/gi)];
+  if (parts.length >= 2 && parts[1].index !== undefined) {
+    return parts[1].index;
+  }
+
+  // Last resort: start from 40% through the document (skip arrangement)
+  return Math.floor(html.length * 0.4);
+}
+
+/**
  * Parse CommonLII HTML to extract provisions from a Malaysian statute page.
  *
- * CommonLII pages have a relatively simple structure:
- * - The act title is typically in the page <title> or first <h1>/<h2>
- * - Parts/Chapters appear as <h2>, <h3>, or bold headings
- * - Sections begin with bold "Section N" or "N." markers
- * - Content follows in <p> tags or directly in the body
- *
- * The parsing is regex-based since CommonLII does not use semantic CSS classes.
+ * Strategy:
+ * 1. Find where actual provisions start (skip arrangement of sections)
+ * 2. Split text on section boundaries (pattern: <p>N. or N. at start of line)
+ * 3. Track Part/Chapter headings for context
+ * 4. Extract definitions from "interpretation" sections
  */
 export function parseMalaysianHtml(html: string, act: ActIndexEntry): ParsedAct {
   const provisions: ParsedProvision[] = [];
@@ -103,104 +153,135 @@ export function parseMalaysianHtml(html: string, act: ActIndexEntry): ParsedAct 
 
   // Determine provision prefix based on act type
   const prefix = act.usesArticles ? 'art' : 's';
-  const sectionLabel = act.usesArticles ? 'Article' : 'Section';
 
-  // Extract the main content body (between first <body> and </body>, or full HTML)
+  // Get the body content
   const bodyMatch = html.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
-  const bodyHtml = bodyMatch ? bodyMatch[1] : html;
+  const fullBody = bodyMatch ? bodyMatch[1] : html;
+
+  // Find where actual provision text starts
+  const provStart = findProvisionStart(fullBody);
+  const bodyHtml = fullBody.substring(provStart);
+
+  // Convert to text for easier processing, preserving structure markers
+  // First, mark section boundaries in a way we can split on
+  let processedHtml = bodyHtml;
 
   // Track current chapter/part
   let currentChapter = '';
 
-  // Strategy: split on section boundaries.
-  // CommonLII uses patterns like:
-  //   <b>Section 3.</b> or <b>3.</b> or <p><b>Section 3. Title</b>
-  // Also handles "PART II" / "CHAPTER III" headings for chapter tracking.
+  // Split into lines/blocks at <p> boundaries
+  const blocks = processedHtml
+    .split(/<p\s*[^>]*>/gi)
+    .map(b => b.replace(/<\/p>/gi, '').trim())
+    .filter(b => b.length > 0);
 
-  // First, extract part/chapter headings and their positions
-  const chapterPattern = /(?:<h[23][^>]*>|<p[^>]*>\s*<b>)\s*((?:PART|CHAPTER|BAHAGIAN)\s+[IVXLCDM0-9]+(?:\s*[-\u2013]\s*[^<]*)?)\s*(?:<\/b>\s*<\/p>|<\/h[23]>)/gi;
-  const chapterPositions: { pos: number; name: string }[] = [];
-  let chapterMatch: RegExpExecArray | null;
+  // State machine: accumulate text for current section
+  let currentSectionNum = '';
+  let currentSectionTitle = '';
+  let currentSectionContent: string[] = [];
 
-  while ((chapterMatch = chapterPattern.exec(bodyHtml)) !== null) {
-    chapterPositions.push({
-      pos: chapterMatch.index,
-      name: stripHtml(chapterMatch[1]).trim(),
-    });
-  }
+  function flushSection(): void {
+    if (!currentSectionNum) return;
 
-  // Split HTML on section boundaries
-  // Pattern matches: "Section N." or "N." at the start of a bold element or heading
-  const sectionSplitPattern = new RegExp(
-    `(?:<b>\\s*(?:${sectionLabel}\\s+)?(\\d+[A-Za-z]*)\\b[.]?\\s*([^<]*)<\\/b>|` +
-    `<b>\\s*${sectionLabel}\\s+(\\d+[A-Za-z]*)\\b[.]?\\s*<\\/b>)`,
-    'gi',
-  );
+    const contentText = removePageBreaks(
+      stripHtml(currentSectionContent.join('\n'))
+    ).trim();
 
-  const sectionStarts: { pos: number; num: string; titleHint: string }[] = [];
-  let secMatch: RegExpExecArray | null;
-
-  while ((secMatch = sectionSplitPattern.exec(bodyHtml)) !== null) {
-    const num = secMatch[1] ?? secMatch[3] ?? '';
-    const titleHint = stripHtml(secMatch[2] ?? '').trim();
-    if (num && /^\d+[A-Za-z]*$/.test(num)) {
-      sectionStarts.push({ pos: secMatch.index, num, titleHint });
-    }
-  }
-
-  // Process each section
-  for (let i = 0; i < sectionStarts.length; i++) {
-    const { pos, num, titleHint } = sectionStarts[i];
-    const nextPos = i + 1 < sectionStarts.length ? sectionStarts[i + 1].pos : bodyHtml.length;
-    const sectionHtml = bodyHtml.substring(pos, nextPos);
-
-    // Update current chapter based on position
-    for (const cp of chapterPositions) {
-      if (cp.pos < pos) {
-        currentChapter = cp.name;
-      }
-    }
-
-    // Extract section title: either from the bold text or the next heading/bold element
-    let title = titleHint;
-    if (!title) {
-      const titleMatch = sectionHtml.match(/<b>\s*(?:Section\s+)?\d+[A-Za-z]*\.?\s*([^<]+)<\/b>/i);
-      title = titleMatch ? stripHtml(titleMatch[1]).trim() : '';
-    }
-    // Remove trailing period from title
-    title = title.replace(/\.\s*$/, '').trim();
-
-    // Extract full text content
-    const content = stripHtml(sectionHtml);
-
-    if (content.length > 20) {
-      const provisionRef = `${prefix}${num}`;
+    if (contentText.length > 15) {
+      const provRef = `${prefix}${currentSectionNum}`;
 
       provisions.push({
-        provision_ref: provisionRef,
+        provision_ref: provRef,
         chapter: currentChapter || undefined,
-        section: num,
-        title,
-        content: content.substring(0, 12000), // Cap at 12K chars
+        section: currentSectionNum,
+        title: currentSectionTitle,
+        content: contentText.substring(0, 12000),
       });
 
-      // Extract definitions: look for "term" means patterns
-      const defPattern = /["\u201C]([^"\u201D]+)["\u201D]\s+means\s+([\s\S]*?)(?=;\s*$|;\s*["\u201C]|\.\s*$)/gm;
-      let defMatch: RegExpExecArray | null;
-
-      while ((defMatch = defPattern.exec(content)) !== null) {
-        const term = defMatch[1].trim();
-        const definition = `"${term}" means ${defMatch[2].trim()}`;
-        if (term.length > 1 && term.length < 100) {
-          definitions.push({
-            term,
-            definition: definition.substring(0, 4000),
-            source_provision: provisionRef,
-          });
-        }
+      // Extract definitions from "interpretation" sections
+      if (/interpret|definition|meaning/i.test(currentSectionTitle) || currentSectionNum === '2' || currentSectionNum === '3') {
+        extractDefinitions(contentText, provRef, definitions);
       }
     }
   }
+
+  // Section number pattern: "N." or "N. (1)" at the start of a block
+  // Must handle: "1.", "1. (1)", "23A.", "123.", etc.
+  const sectionStartRe = /^(\d+[A-Za-z]?)\.\s*(.*)/s;
+
+  // Part/Chapter heading pattern
+  const partChapterRe = /^(PART|Part|CHAPTER|Chapter|BAHAGIAN|DIVISION)\s+([IVXLCDM0-9]+[A-Za-z]?(?:\s*[-\u2013]\s*[^\n<]*)?)/i;
+
+  // Title line pattern (appears before section number — usually the section title in Title Case)
+  let pendingTitle = '';
+
+  for (const block of blocks) {
+    const cleanBlock = stripHtml(block).trim();
+    if (!cleanBlock) continue;
+
+    // Check for Part/Chapter heading
+    const partMatch = cleanBlock.match(partChapterRe);
+    if (partMatch) {
+      // Full chapter: "PART I" or "PART I - PRELIMINARY"
+      const fullHeading = cleanBlock.replace(/\n.*/s, '').trim();
+      // Look for a subtitle on the next line
+      const lines = cleanBlock.split('\n').map(l => l.trim()).filter(l => l);
+      if (lines.length > 1 && !sectionStartRe.test(lines[1])) {
+        currentChapter = `${lines[0]} - ${lines[1]}`.substring(0, 200);
+      } else {
+        currentChapter = fullHeading.substring(0, 200);
+      }
+      continue;
+    }
+
+    // Check for section start
+    const secMatch = cleanBlock.match(sectionStartRe);
+    if (secMatch) {
+      // Flush previous section
+      flushSection();
+
+      currentSectionNum = secMatch[1];
+      currentSectionTitle = pendingTitle || '';
+      currentSectionContent = [cleanBlock];
+      pendingTitle = '';
+      continue;
+    }
+
+    // Check if this is a standalone title line (Title Case, no period, short)
+    // before the next section number
+    if (
+      cleanBlock.length < 200 &&
+      !cleanBlock.includes('.') &&
+      /^[A-Z]/.test(cleanBlock) &&
+      !/^\d/.test(cleanBlock) &&
+      !/^(PART|CHAPTER|BAHAGIAN|DIVISION|SCHEDULE|LAWS OF|ARRANGEMENT)/i.test(cleanBlock)
+    ) {
+      pendingTitle = cleanBlock.replace(/\n.*$/s, '').trim();
+      // Still add to content if we have an active section
+      if (currentSectionNum) {
+        currentSectionContent.push(cleanBlock);
+      }
+      continue;
+    }
+
+    // Skip page-break artifacts
+    if (/^\d+\s*(?:Laws of Malaysia|LAWS OF MALAYSIA)/i.test(cleanBlock)) {
+      continue;
+    }
+    if (/^\d+[A-Z][a-z]/.test(cleanBlock) && cleanBlock.length < 60) {
+      continue;
+    }
+
+    // Accumulate content for current section
+    if (currentSectionNum) {
+      currentSectionContent.push(cleanBlock);
+    }
+
+    pendingTitle = '';
+  }
+
+  // Flush the last section
+  flushSection();
 
   // Deduplicate provisions by provision_ref (keep longest content)
   const byRef = new Map<string, ParsedProvision>();
@@ -214,157 +295,129 @@ export function parseMalaysianHtml(html: string, act: ActIndexEntry): ParsedAct 
   // Deduplicate definitions by term (keep longest)
   const byTerm = new Map<string, ParsedDefinition>();
   for (const def of definitions) {
-    const existing = byTerm.get(def.term);
+    const existing = byTerm.get(def.term.toLowerCase());
     if (!existing || def.definition.length > existing.definition.length) {
-      byTerm.set(def.term, def);
+      byTerm.set(def.term.toLowerCase(), def);
     }
   }
 
   return {
     id: act.id,
     type: 'statute',
-    title: act.title,
-    title_en: act.titleEn,
-    short_name: act.shortName,
+    title: act.titleClean || act.title,
+    title_en: act.titleClean || act.title,
+    short_name: act.titleClean || act.title,
     status: act.status,
-    issued_date: act.issuedDate,
-    in_force_date: act.inForceDate,
+    issued_date: act.year || '',
+    in_force_date: act.year || '',
     url: act.url,
-    description: act.description,
     provisions: Array.from(byRef.values()),
     definitions: Array.from(byTerm.values()),
   };
 }
 
 /**
- * Pre-configured list of key Malaysian Acts to ingest.
- * These are the most important Acts for cybersecurity, data protection,
- * corporate governance, and compliance use cases.
- *
- * URL patterns for CommonLII:
- *   https://www.commonlii.org/my/legis/consol_act/{slug}/
- *   Slugs derived from act title in lowercase with underscores.
+ * Extract definitions from a provision's text.
+ * Malaysian statutes use patterns like:
+ *   "term" means ...;
+ *   "term" includes ...;
+ */
+function extractDefinitions(
+  text: string,
+  sourceProvision: string,
+  definitions: ParsedDefinition[],
+): void {
+  // Pattern: "term" means/includes ... ending with ; or .
+  const defPattern = /["\u201C]([^"\u201D]{2,80})["\u201D]\s+(?:means|includes|has the meaning)\s+([\s\S]*?)(?=;\s*$|;\s*["\u201C]|;\s*\n|$)/gm;
+  let defMatch: RegExpExecArray | null;
+
+  while ((defMatch = defPattern.exec(text)) !== null) {
+    const term = defMatch[1].trim();
+    const defBody = defMatch[2].trim();
+
+    if (term.length > 1 && term.length < 100 && defBody.length > 5) {
+      definitions.push({
+        term,
+        definition: `"${term}" means ${defBody}`.substring(0, 4000),
+        source_provision: sourceProvision,
+      });
+    }
+  }
+
+  // Also try the unquoted pattern: term—means/includes
+  const defPattern2 = /\b([A-Z][a-z]+(?:\s+[a-z]+)*)\s*[-\u2014]+\s*means\s+([\s\S]*?)(?=;\s*$|;\s*\n|$)/gm;
+  while ((defMatch = defPattern2.exec(text)) !== null) {
+    const term = defMatch[1].trim();
+    const defBody = defMatch[2].trim();
+
+    if (term.length > 2 && term.length < 80 && defBody.length > 5) {
+      definitions.push({
+        term,
+        definition: `"${term}" means ${defBody}`.substring(0, 4000),
+        source_provision: sourceProvision,
+      });
+    }
+  }
+}
+
+/**
+ * Pre-configured list of key Malaysian Acts (fallback when no census.json exists).
+ * The census script generates the authoritative full list.
  */
 export const KEY_MALAYSIAN_ACTS: ActIndexEntry[] = [
   {
-    id: 'pdpa-2010',
-    title: 'Akta Perlindungan Data Peribadi 2010',
-    titleEn: 'Personal Data Protection Act 2010',
-    shortName: 'PDPA 2010',
+    id: 'pdpa2010360',
+    slug: 'pdpa2010360',
+    title: 'Personal Data Protection Act 2010',
+    titleClean: 'Personal Data Protection Act 2010',
     actNumber: 'Act 709',
+    year: '2010',
     status: 'in_force',
-    issuedDate: '2010-06-10',
-    inForceDate: '2013-11-15',
-    url: 'https://www.commonlii.org/my/legis/consol_act/pdpa2010360/',
-    description: 'Regulates the processing of personal data in commercial transactions. Establishes 7 data protection principles, rights of data subjects, and the role of the Personal Data Protection Commissioner.',
+    url: 'http://www.commonlii.org/my/legis/consol_act/pdpa2010360',
+    usesArticles: false,
   },
   {
-    id: 'computer-crimes-1997',
-    title: 'Akta Jenayah Komputer 1997',
-    titleEn: 'Computer Crimes Act 1997',
-    shortName: 'CCA 1997',
+    id: 'cca1997210',
+    slug: 'cca1997210',
+    title: 'Computer Crimes Act 1997',
+    titleClean: 'Computer Crimes Act 1997',
     actNumber: 'Act 563',
+    year: '1997',
     status: 'in_force',
-    issuedDate: '1997-06-01',
-    inForceDate: '2000-06-01',
-    url: 'https://www.commonlii.org/my/legis/consol_act/cca1997210/',
-    description: 'Criminalises unauthorised access to computer material, unauthorised modification of computer contents, wrongful communication, and abetment/attempts. Key cybercrime statute.',
+    url: 'http://www.commonlii.org/my/legis/consol_act/cca1997210',
+    usesArticles: false,
   },
   {
-    id: 'cma-1998',
-    title: 'Akta Komunikasi dan Multimedia 1998',
-    titleEn: 'Communications and Multimedia Act 1998',
-    shortName: 'CMA 1998',
+    id: 'cama1998289',
+    slug: 'cama1998289',
+    title: 'Communications and Multimedia Act 1998',
+    titleClean: 'Communications and Multimedia Act 1998',
     actNumber: 'Act 588',
+    year: '1998',
     status: 'in_force',
-    issuedDate: '1998-11-01',
-    inForceDate: '1999-04-01',
-    url: 'https://www.commonlii.org/my/legis/consol_act/cama1998330/',
-    description: 'Comprehensive regulation of communications and multimedia industries in Malaysia. Establishes MCMC (Malaysian Communications and Multimedia Commission) and governs licensing, content regulation, and technical standards.',
+    url: 'http://www.commonlii.org/my/legis/consol_act/cama1998289',
+    usesArticles: false,
   },
   {
-    id: 'companies-2016',
-    title: 'Akta Syarikat 2016',
-    titleEn: 'Companies Act 2016',
-    shortName: 'CA 2016',
+    id: 'ca2016139',
+    slug: 'ca2016139',
+    title: 'Companies Act 2016',
+    titleClean: 'Companies Act 2016',
     actNumber: 'Act 777',
+    year: '2016',
     status: 'in_force',
-    issuedDate: '2016-09-15',
-    inForceDate: '2017-01-31',
-    url: 'https://www.commonlii.org/my/legis/consol_act/ca2016139/',
-    description: 'Governs company incorporation, management, and dissolution in Malaysia. Includes provisions on corporate governance, directors duties, financial reporting, and compliance requirements.',
+    url: 'http://www.commonlii.org/my/legis/consol_act/ca2016139',
+    usesArticles: false,
   },
   {
-    id: 'eca-2006',
-    title: 'Akta Perdagangan Elektronik 2006',
-    titleEn: 'Electronic Commerce Act 2006',
-    shortName: 'ECA 2006',
+    id: 'eca2006203',
+    slug: 'eca2006203',
+    title: 'Electronic Commerce Act 2006',
+    titleClean: 'Electronic Commerce Act 2006',
     actNumber: 'Act 658',
+    year: '2006',
     status: 'in_force',
-    issuedDate: '2006-01-01',
-    inForceDate: '2006-10-19',
-    url: 'https://www.commonlii.org/my/legis/consol_act/eca2006203/',
-    description: 'Provides legal recognition for electronic messages in commercial transactions. Covers formation of contracts, attribution, acknowledgment, and dispatch/receipt of electronic messages.',
-  },
-  {
-    id: 'sta-2010',
-    title: 'Akta Perdagangan Strategik 2010',
-    titleEn: 'Strategic Trade Act 2010',
-    shortName: 'STA 2010',
-    actNumber: 'Act 708',
-    status: 'in_force',
-    issuedDate: '2010-06-10',
-    inForceDate: '2011-07-01',
-    url: 'https://www.commonlii.org/my/legis/consol_act/sta2010199/',
-    description: 'Controls export, transhipment, transit, and brokering of strategic items, including technology and software relevant to weapons of mass destruction and military end-use.',
-  },
-  {
-    id: 'federal-constitution',
-    title: 'Perlembagaan Persekutuan',
-    titleEn: 'Federal Constitution',
-    shortName: 'Federal Constitution',
-    actNumber: 'Constitution',
-    status: 'in_force',
-    issuedDate: '1957-08-31',
-    inForceDate: '1957-08-31',
-    url: 'https://www.commonlii.org/my/legis/consol_act/fc/',
-    usesArticles: true,
-    description: 'Supreme law of Malaysia. Establishes fundamental liberties (Part II), federal-state relations, citizenship, and the structure of government. Article 5 (liberty), Article 10 (expression), Article 13 (property) are key for digital rights.',
-  },
-  {
-    id: 'penal-code',
-    title: 'Kanun Keseksaan',
-    titleEn: 'Penal Code',
-    shortName: 'Penal Code',
-    actNumber: 'Act 574',
-    status: 'in_force',
-    issuedDate: '1936-01-01',
-    inForceDate: '1936-01-01',
-    url: 'https://www.commonlii.org/my/legis/consol_act/pc182/',
-    description: 'Comprehensive criminal code. Includes provisions on cheating (s415-s420), criminal breach of trust (s405-s409), mischief including computer damage (s425-s440), forgery including electronic documents (s463-s477A), and criminal intimidation.',
-  },
-  {
-    id: 'evidence-act-1950',
-    title: 'Akta Keterangan 1950',
-    titleEn: 'Evidence Act 1950',
-    shortName: 'EA 1950',
-    actNumber: 'Act 56',
-    status: 'in_force',
-    issuedDate: '1950-01-01',
-    inForceDate: '1950-01-01',
-    url: 'https://www.commonlii.org/my/legis/consol_act/ea195080/',
-    description: 'Governs admissibility of evidence in court. Section 90A-90C cover admissibility of electronic documents and computer-generated evidence. Critical for cybercrime prosecution and digital forensics.',
-  },
-  {
-    id: 'cpa-1999',
-    title: 'Akta Pelindungan Pengguna 1999',
-    titleEn: 'Consumer Protection Act 1999',
-    shortName: 'CPA 1999',
-    actNumber: 'Act 599',
-    status: 'in_force',
-    issuedDate: '1999-11-15',
-    inForceDate: '1999-11-15',
-    url: 'https://www.commonlii.org/my/legis/consol_act/cpa1999304/',
-    description: 'Protects consumers against unfair practices, misleading conduct, unsafe goods and services. Part IIIA covers e-commerce consumer protection including online marketplace obligations.',
+    url: 'http://www.commonlii.org/my/legis/consol_act/eca2006203',
+    usesArticles: false,
   },
 ];

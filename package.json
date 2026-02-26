@@ -2,7 +2,7 @@
   "name": "@ansvar/malaysian-law-mcp",
   "version": "1.0.1",
   "mcpName": "eu.ansvar/malaysian-law-mcp",
-  "description": "Malaysian law database covering PDPA 2010, Computer Crimes Act, Communications and Multimedia Act, Companies Act, and Electronic Commerce Act with full-text search",
+  "description": "Malaysian law database covering 589 federal statutes (24,514 provisions) including Computer Crimes Act, Anti-Money Laundering Act, Evidence Act, Employment Act, Income Tax Act, and more with full-text search",
   "author": "Ansvar Systems <hello@ansvar.eu>",
   "license": "Apache-2.0",
   "repository": {
@@ -44,6 +44,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
+    "census": "node --import tsx scripts/census.ts",
     "ingest": "node --import tsx scripts/ingest.ts",
     "test:contract": "vitest run __tests__/contract/",
     "drift:detect": "node --import tsx scripts/drift-detect.ts",

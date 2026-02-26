@@ -1,10 +1,16 @@
 node_modules/
 dist/
-*.db
-!data/.gitkeep
 .env
 .env.*
 *.tgz
 coverage/
 .vercel/
 .DS_Store
+
+# Data pipeline intermediates (can be regenerated)
+data/source/
+data/seed/
+
+# Keep these tracked:
+# data/census.json
+# data/database.db

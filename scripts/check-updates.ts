@@ -25,7 +25,7 @@ const CENSUS_PATH = resolve(__dirname, '../data/census.json');
 
 const MAX_DB_AGE_DAYS = Number(process.env['MAX_DB_AGE_DAYS'] ?? '90');
 const PORTAL_URL = 'https://www.agc.gov.my';
-const PORTAL_NAME = 'Attorney General's Chambers (Malaysia)';
+const PORTAL_NAME = "Attorney General's Chambers (Malaysia)";
 
 interface CensusSummary {
   total_laws?: number;

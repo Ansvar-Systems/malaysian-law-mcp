@@ -1,29 +1,13 @@
 {
   "$schema": "./golden-tests.schema.json",
-  "version": "1.0",
+  "version": "2.0",
   "mcp_name": "Malaysian Law MCP",
-  "description": "Golden contract tests for the Malaysian Law MCP covering PDPA 2010, Computer Crimes Act, Communications and Multimedia Act, Companies Act, and Electronic Commerce Act",
+  "description": "Golden contract tests for the Malaysian Law MCP covering 589 consolidated Malaysian federal Acts from CommonLII (Acts up to 2006)",
   "tests": [
     {
       "id": "my-001",
       "category": "article_retrieval",
-      "description": "Retrieve Section 4 of the PDPA 2010 (Act 709) -- definitions including personal data (data peribadi)",
-      "tool": "get_provision",
-      "input": {
-        "law_identifier": "Personal Data Protection Act 2010",
-        "article": "4"
-      },
-      "assertions": {
-        "result_not_empty": true,
-        "text_contains": ["personal data", "data user"],
-        "fields_present": ["text", "article_number"],
-        "text_not_empty": true
-      }
-    },
-    {
-      "id": "my-002",
-      "category": "article_retrieval",
-      "description": "Retrieve Section 3 of the Computer Crimes Act 1997 (Act 563) -- unauthorised access to computer material",
+      "description": "Retrieve Section 3 of the Computer Crimes Act 1997 -- unauthorised access to computer material",
       "tool": "get_provision",
       "input": {
         "law_identifier": "Computer Crimes Act 1997",
@@ -31,31 +15,15 @@
       },
       "assertions": {
         "result_not_empty": true,
-        "any_result_contains": ["computer", "access", "unauthorised"],
+        "any_result_contains": ["computer", "offence", "function"],
         "fields_present": ["text", "article_number"],
         "text_not_empty": true
       }
     },
     {
-      "id": "my-003",
+      "id": "my-002",
       "category": "article_retrieval",
-      "description": "Retrieve Section 1 of the Companies Act 2016 (Act 777) -- short title and commencement",
-      "tool": "get_provision",
-      "input": {
-        "law_identifier": "Companies Act 2016",
-        "article": "1"
-      },
-      "assertions": {
-        "result_not_empty": true,
-        "any_result_contains": ["Companies Act", "company"],
-        "fields_present": ["text", "article_number"],
-        "text_not_empty": true
-      }
-    },
-    {
-      "id": "my-004",
-      "category": "article_retrieval",
-      "description": "Retrieve Section 1 of the Communications and Multimedia Act 1998 (Act 588) -- short title and commencement",
+      "description": "Retrieve Section 1 of the Communications and Multimedia Act 1998 (Act 588)",
       "tool": "get_provision",
       "input": {
         "law_identifier": "Communications and Multimedia Act 1998",
@@ -63,94 +31,129 @@
       },
       "assertions": {
         "result_not_empty": true,
-        "any_result_contains": ["Communications", "Multimedia", "Act"],
+        "any_result_contains": ["licence", "licensee"],
         "fields_present": ["text"],
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "my-003",
+      "category": "article_retrieval",
+      "description": "Retrieve Section 2 of the Evidence Act 1950 -- definitions including 'computer'",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Evidence Act 1950",
+        "article": "3"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "any_result_contains": ["computer", "means"],
+        "fields_present": ["text", "article_number"],
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "my-004",
+      "category": "article_retrieval",
+      "description": "Retrieve Section 4 of the Anti-Money Laundering Act 2001 -- money laundering offence",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Anti-Money Laundering Act 2001",
+        "article": "4"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "any_result_contains": ["money", "laundering", "offence"],
+        "fields_present": ["text", "article_number"],
         "text_not_empty": true
       }
     },
     {
       "id": "my-005",
-      "category": "search",
-      "description": "Full-text search for 'data peribadi' returns PDPA provisions",
-      "tool": "search_legislation",
+      "category": "article_retrieval",
+      "description": "Retrieve Section 2 of the Employment Act 1955 -- interpretation/definitions",
+      "tool": "get_provision",
       "input": {
-        "query": "data peribadi"
+        "law_identifier": "Employment Act 1955",
+        "article": "2"
       },
       "assertions": {
         "result_not_empty": true,
-        "min_results": 1,
-        "any_result_contains": ["Personal Data Protection", "data peribadi", "Act 709"]
+        "any_result_contains": ["means", "employer", "employee"],
+        "fields_present": ["text", "article_number"],
+        "text_not_empty": true
       }
     },
     {
       "id": "my-006",
       "category": "search",
-      "description": "Full-text search for 'jenayah komputer' returns Computer Crimes Act provisions",
+      "description": "Full-text search for 'computer' returns cybercrime-related provisions",
       "tool": "search_legislation",
       "input": {
-        "query": "jenayah komputer"
+        "query": "computer crimes unauthorised access"
       },
       "assertions": {
         "result_not_empty": true,
         "min_results": 1,
-        "any_result_contains": ["Computer Crimes", "computer", "access"]
+        "any_result_contains": ["computer", "access"]
       }
     },
     {
       "id": "my-007",
       "category": "search",
-      "description": "Full-text search for 'syarikat' returns Companies Act provisions",
+      "description": "Full-text search for 'money laundering' returns AML provisions",
       "tool": "search_legislation",
       "input": {
-        "query": "syarikat"
+        "query": "money laundering"
       },
       "assertions": {
         "result_not_empty": true,
         "min_results": 1,
-        "any_result_contains": ["Companies Act", "company", "syarikat"]
+        "any_result_contains": ["money", "laundering"]
       }
     },
     {
       "id": "my-008",
-      "category": "citation_roundtrip",
-      "description": "Citation for PDPA Section 6 (data protection principles) includes agc.gov.my URL pattern",
-      "tool": "get_provision",
+      "category": "search",
+      "description": "Full-text search for 'income tax' returns fiscal provisions",
+      "tool": "search_legislation",
       "input": {
-        "law_identifier": "Personal Data Protection Act 2010",
-        "article": "6"
+        "query": "income tax"
       },
       "assertions": {
         "result_not_empty": true,
-        "citation_url_pattern": "agc\\.gov\\.my",
-        "text_not_empty": true
+        "min_results": 1,
+        "any_result_contains": ["income", "tax"]
       }
     },
     {
       "id": "my-009",
       "category": "citation_roundtrip",
-      "description": "Citation for Electronic Commerce Act Section 1 includes official identifier",
+      "description": "Citation for Computer Crimes Act Section 3 includes commonlii.org URL pattern",
       "tool": "get_provision",
       "input": {
-        "law_identifier": "Electronic Commerce Act 2006",
-        "article": "1"
+        "law_identifier": "Computer Crimes Act 1997",
+        "article": "3"
       },
       "assertions": {
         "result_not_empty": true,
-        "fields_present": ["text"],
+        "citation_url_pattern": "commonlii\\.org",
         "text_not_empty": true
       }
     },
     {
       "id": "my-010",
-      "category": "eu_cross_reference",
-      "description": "PDPA cross-reference to GDPR -- Malaysia's PDPA 2010 predates GDPR but has similar principles",
-      "tool": "get_provision_eu_basis",
+      "category": "citation_roundtrip",
+      "description": "Citation for Evidence Act Section 3 includes official identifier",
+      "tool": "get_provision",
       "input": {
-        "law_identifier": "Personal Data Protection Act 2010"
+        "law_identifier": "Evidence Act 1950",
+        "article": "3"
       },
       "assertions": {
         "result_not_empty": true,
-        "any_result_contains": ["GDPR", "General Data Protection Regulation", "2016/679", "data protection"]
+        "fields_present": ["text"],
+        "text_not_empty": true
       }
     },
     {
@@ -172,7 +175,7 @@
       "description": "Malformed section number returns graceful error or empty result",
       "tool": "get_provision",
       "input": {
-        "law_identifier": "Personal Data Protection Act 2010",
+        "law_identifier": "Computer Crimes Act 1997",
         "article": "999ZZZ-INVALID"
       },
       "assertions": {
