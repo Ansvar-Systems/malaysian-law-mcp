@@ -14,3 +14,4 @@ data/seed/
 # Keep these tracked:
 # data/census.json
 # data/database.db
+.vercel
