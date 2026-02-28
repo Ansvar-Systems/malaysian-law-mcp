@@ -15,3 +15,5 @@ data/seed/
 # data/census.json
 # data/database.db
 .vercel
+.claude/
+.serena/
