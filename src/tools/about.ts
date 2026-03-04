@@ -44,7 +44,7 @@ export function getAbout(db: InstanceType<typeof Database>, context: AboutContex
       {
         name: 'CommonLII Malaysia',
         url: 'https://commonlii.org/my',
-        authority: 'Attorney General's Chambers',
+        authority: 'Attorney General\'s Chambers',
       },
     ],
     freshness: {
