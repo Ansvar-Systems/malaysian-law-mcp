@@ -9,6 +9,8 @@ export interface ResponseMetadata {
   jurisdiction: string;
   disclaimer: string;
   freshness?: string;
+  note?: string;
+  query_strategy?: string;
 }
 
 export interface ToolResponse<T> {
@@ -30,10 +32,10 @@ export function generateResponseMetadata(
   }
 
   return {
-    data_source: 'Federal Gazette (lom.agc.gov.my) — Malaysian Attorney General's Chambers',
+    data_source: "Federal Gazette (lom.agc.gov.my) — Malaysian Attorney General's Chambers",
     jurisdiction: 'MY',
     disclaimer:
-      'This data is sourced from the Laws of Malaysia Online portal. The authoritative versions are maintained by the Malaysian Attorney General's Chambers. Always verify with the official portal (lom.agc.gov.my).',
+      "This data is sourced from the Laws of Malaysia Online portal. The authoritative versions are maintained by the Malaysian Attorney General's Chambers. Always verify with the official portal (lom.agc.gov.my).",
     freshness,
   };
 }
