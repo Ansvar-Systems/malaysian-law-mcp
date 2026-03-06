@@ -4,3 +4,4 @@ node_modules
 tests
 scripts/*
 !scripts/build-db.ts
+!scripts/download-db.sh
