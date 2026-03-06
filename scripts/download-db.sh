@@ -1,5 +1,6 @@
 #!/bin/bash
 # Download database from GitHub Releases for Vercel deployment.
+# Always downloads to ensure build cache doesn't serve stale/empty DB.
 set -e
 
 VERSION=$(node -p "require('./package.json').version")
@@ -8,13 +9,8 @@ TAG="v${VERSION}"
 ASSET="database.db.gz"
 OUTPUT="data/database.db"
 
-if [ -f "$OUTPUT" ] && [ "$(wc -c < "$OUTPUT")" -gt 1000000 ]; then
-  echo "[download-db] Database already exists at $OUTPUT, skipping download"
-  exit 0
-fi
-
 URL="https://github.com/${REPO}/releases/download/${TAG}/${ASSET}"
-echo "[download-db] Downloading database..."
+echo "[download-db] Downloading database from GitHub releases..."
 echo "  URL: ${URL}"
 
 mkdir -p data
